@@ -1,0 +1,57 @@
+.footer
+    background: $white
+    .container
+        padding-bottom: 72px
+    &__top
+        border-top: 1px solid rgba($l-gray, .2)
+        padding-top: 72px
+        padding-bottom: 50px
+        display: flex
+    &__bottom
+        display: flex
+        align-items: center
+    &__copyright,
+    &__social
+        min-width: 164px
+        margin-right: 50px
+    &__policy-list
+        display: flex
+        justify-content: space-between
+        margin-left: -10px
+        margin-right: -10px
+        flex: 1 auto
+        a
+            color: $gray
+            font-size: 14px
+            padding: 10px
+            transition: .3s
+            &:hover
+                color: $yellow
+    &__copyright
+        font-size: 14px
+        text-transform: uppercase
+        color: $l-gray
+        font-weight: 300
+        padding: 10px
+    &__social-list
+        display: flex
+        justify-content: center
+        align-items: center
+    &__social-item
+        fill: $l-gray
+        padding: 7px
+        transition: .3s
+        &:hover
+            cursor: pointer
+            fill: $yellow
+    &__logo
+        max-width: 162px
+        margin-top: -10px
+    &__about
+        flex: 1 auto
+        .text
+            font-size: 14px
+            line-height: 24px
+            font-weight: 300
+            color: $l-gray
+            max-width: 585px

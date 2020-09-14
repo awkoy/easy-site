@@ -1,0 +1,122 @@
+body
+    font-family: 'Roboto'
+    background: $peach
+    overflow-x: hidden
+
+section
+    position: relative
+
+.container
+    max-width: $container-w;
+    padding-left: $container-p;
+    padding-right: $container-p;
+    margin: 0 auto;
+
+.easy-btn
+    background: $black
+    border-radius: 72px
+    text-align: center
+    font-size: $btn-fz
+    min-width: 160px;
+    height: 52px
+    line-height: 52px
+    text-decoration: none
+    border: none
+    display: block
+    color: $white
+    transition: background .3s
+    padding-left: 30px
+    padding-right: 30px
+    &:hover
+        background: $yellow
+    &--reverse
+        background: $yellow
+        &:hover
+            background: $black
+.easy-slider
+    &__prev,
+    &__next
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 60px
+        height: 60px
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05)
+        background: $white
+        border-radius: 50%
+        top: 0
+        bottom: 0
+        margin: auto
+        z-index: 2
+        cursor: pointer
+        svg
+            stroke: $yellow
+            transition: .3s
+        &:hover svg
+            stroke: $black
+
+    &__prev
+        left: 0px
+    &__next
+        right: 0px
+
+.is-rounded-bottom
+    overflow: hidden
+    &:after
+        display: block
+        position: absolute
+        content: ''
+        min-width: 1600px
+        width: 100%
+        height: 1600px
+        background: $white
+        border-radius: 50%
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        z-index: -2
+
+.is-rounded-top
+    padding-top: 200px
+    overflow: hidden
+    &:after
+        display: block
+        position: absolute
+        content: ''
+        width: 100%
+        min-width: 1600px
+        height: 1600px
+        background: $white
+        border-radius: 50%
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        z-index: -2
+
+//typography
+h1
+    font-size: 64px
+    line-height: 68px
+    text-align: center
+    font-weight: bold
+    color: $black
+    span
+        display: block
+        color: $yellow
+
+h2
+    font-size: 54px
+    line-height: 58px
+    text-align: center
+    font-weight: bold
+    color: $black
+
+.text
+    font-size: 18px
+    line-height: 30px
+    color: $gray
+    font-weight: 300
+
+.swiper-container-fade .swiper-slide
+    background: $white

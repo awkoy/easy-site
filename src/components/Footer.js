@@ -1,17 +1,56 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import DownloadApp from './DownloadApp'
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import mainlogo from '../img/main-logo.svg'
+import { IconFacebook, IconInst, IconTelegram, IconViber } from './Common/icons'
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
+      <footer className="footer">
+        <div className="container">
+          <div className="footer__top">
+            <div className="footer__social">
+              <img src={mainlogo} className="footer__logo" />
+              <div className="footer__social-list">
+                <a href="/" className="footer__social-item">
+                  <IconFacebook />
+                </a>
+                <a href="/" className="footer__social-item">
+                  <IconInst />
+                </a>
+                <a href="/" className="footer__social-item">
+                  <IconTelegram />
+                </a>
+                <a href="/" className="footer__social-item">
+                  <IconViber />
+                </a>
+              </div>
+            </div>
+            <div className="footer__about">
+              <div className="text">
+                EasyGet — мобільний додаток нового покоління. Тепер шопінг на інтернет-платформах Китаю і США стає ще зручнішим та швидшим. Забудьте про втомливі процедури замовлення — просто завантажте у застосунок посилання на потрібний товар або вкажіть наш склад у країні відправника для отримання посилки
+              </div>
+            </div>
+            <div className="footer__download">
+              <DownloadApp dark />
+            </div>
+          </div>
+          <div className="footer__bottom">
+            <div className="footer__copyright">
+              © 2020 EASYGET
+            </div>
+            <div className="footer__policy-list">
+              <a href="">Політика конфіденційності</a>
+              <a href="">Публічний договір</a>
+              <a href="">Заборонено пересилати</a>
+              <a href="">Порядок повернення товарів</a>
+              <a href="">Порядок утилізації товарів</a>
+            </div>
+          </div>
+        </div>
+        {/* <div className="content has-text-centered">
           <img
             src={logo}
             alt="Kaldi"
@@ -106,7 +145,7 @@ const Footer = class extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </footer>
     )
   }

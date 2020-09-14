@@ -1,10 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import EeasySection from '../components/Landing/EasySection'
+import AboutSection from '../components/Landing/AboutSection'
+import FreeSection from '../components/Landing/FreeSection'
+import HowSection from '../components/Landing/HowSection'
+import PriceSection from '../components/Landing/PriceSection'
+import OkaySection from '../components/Landing/OkaySection'
+import CheapestSection from '../components/Landing/CheapestSection'
+import EcommerceSection from '../components/Landing/EcommerceSection'
+import CompareSection from '../components/Landing/CompareSection'
+import FeedbackSection from '../components/Landing/FeedbackSection'
 
 export const IndexPageTemplate = ({
   image,
@@ -15,56 +23,19 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
-      </div>
-    </div>
-    <section className="section section--gradient">
+    <>
+      <EeasySection title={title} />
+      <AboutSection />
+      <FreeSection />
+      <HowSection />
+      <PriceSection />
+      <OkaySection />
+      <CheapestSection />
+      <EcommerceSection />
+      <CompareSection />
+      <FeedbackSection />
+      
+      {/* <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -110,9 +81,9 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
-  </div>
-)
+    </section> */}
+    </>
+  )
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

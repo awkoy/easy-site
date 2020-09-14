@@ -1,0 +1,35 @@
+.navbar 
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    padding-top: 20px
+    padding-bottom: 20px
+    background: $white
+    z-index: 20
+    &__menu
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__phone
+        text-decoration: none
+        text-transform: uppercase
+        color: $black
+        transition: color .3s
+        font-weight: 500
+        font-size: 16px
+        padding: 10px 20px
+        margin-left: 24px
+        margin-right: 34px
+        &:hover
+            color: $yellow
+    &__link
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 500
+        color: $l-gray
+        text-decoration: none
+        padding: 10px 20px
+        transition: color .3s
+        &:hover
+            color: $yellow
