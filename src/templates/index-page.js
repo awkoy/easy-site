@@ -20,11 +20,12 @@ export const IndexPageTemplate = ({
   subtitle,
   about_title,
   about_text,
+  aboutPhone,
   free_section
 }) => (
     <>
       <EeasySection title_top={title_top} title_bottom={title_bottom} subtitle={subtitle} />
-      <AboutSection about_title={about_title} about_text={about_text} />
+      <AboutSection about_title={about_title} about_text={about_text} aboutPhone={aboutPhone} />
       <FreeSection free_section={free_section} />
       <HowSection />
       <PriceSection />
@@ -57,6 +58,7 @@ const IndexPage = ({ data }) => {
         about_title={frontmatter.about_title}
         about_text={frontmatter.about_text}
         free_section={frontmatter.free_section}
+        landing_images={frontmatter.landing_images}
       />
     </Layout>
   )
@@ -82,6 +84,13 @@ export const pageQuery = graphql`
         about_title
         about_text
         free_section {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 450, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
           title
           subtitle
           text

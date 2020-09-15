@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { EffectFade } from 'swiper'
+import PreviewCompatibleImage from '../PreviewCompatibleImage'
 
 import 'swiper/swiper.scss'
 import 'swiper/components/effect-fade/effect-fade.scss'
@@ -13,38 +14,20 @@ import {IconLeft, IconRight} from '../Common/icons';
 
 SwiperCore.use([EffectFade]);
 
-const data = [
-    {
-        title: 'Фотографування товару на складi',
-        text: 'EasyGet — інструмент для зручної доставки та покупки товарів з іноземних сайтів. Ви можете придбати товар самостійно або просто додати його фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні Нової Пошти.',
-        img: free1
-    },
-    {
-        title: 'Доставка до “Нової Пошти”',
-        text: 'EasyGet — інструмент для зручної доставки та покупки товарів з іноземних сайтів. Ви можете придбати товар самостійно або просто додати його фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні Нової Пошти.',
-        img: free2
-    },
-    {
-        title: 'Розділення великого замовлення',
-        text: 'EasyGet — інструмент для зручної доставки та покупки товарів з іноземних сайтів. Ви можете придбати товар самостійно або просто додати його фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні Нової Пошти.',
-        img: free3
-    }
-];
-
-const Slide = ({ title, text, img }) => (
+const Slide = ({ title, subtitle, text, image }) => (
     <div className="landing-free__slide">
         <div className="landing-free__photo">
-            <img src={img} alt={title} />
+            <PreviewCompatibleImage imageInfo={{image}} />
         </div>
         <div className="landing-free__content">
-            <h2 className="landing-free__title title">Безкоштовно</h2>
-            <div className="landing-free__subtitle subtitle">{title}</div>
+            <h2 className="landing-free__title title">{title}</h2>
+            <div className="landing-free__subtitle subtitle">{subtitle}</div>
             <div className="landing-free__text text">{text}</div>
         </div>
     </div>
 );
 
-const FreeSection = () => {
+const FreeSection = ({free_section}) => {
     const [swiper, setSwiper] = useState({});
     
     return (
@@ -56,7 +39,7 @@ const FreeSection = () => {
                     loop
                     onSwiper={(s) => setSwiper(s)}
                 >
-                    {data.map(d => <SwiperSlide key={d.title}><Slide {...d} /></SwiperSlide>)}
+                    {free_section.map(d => <SwiperSlide key={d.subtitle}><Slide {...d} /></SwiperSlide>)}
                 </Swiper>
                 <div className="easy-slider__prev" onClick={() => swiper.slidePrev()}><IconLeft /></div>
                 <div className="easy-slider__next" onClick={() => swiper.slideNext()}><IconRight /></div>

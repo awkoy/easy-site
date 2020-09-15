@@ -49,6 +49,15 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Subtitle, name: subtitle, widget: string}
               - {label: Text, name: text, widget: text}
+          - {label: HowTitle, name: how_title, widget: string}
+          - label: HowSteps
+            name: how_steps
+            widget: object
+            fields: [{label: Order Steps, name: order_steps, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}, {label: Buy Steps, name: buy_steps, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]
+          - label: LandingImages
+            name: landing_images
+            widget: object
+            fields: [{label: Easy1, name: easy1, widget: image},{label: Easy2, name: easy2, widget: image},{label: Easy3, name: easy3, widget: image},{label: Easy4, name: easy4, widget: image},{label: Easy5, name: easy5, widget: image},{label: AboutPhone, name: about_phone, widget: image}]
           # - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           # - {label: Description, name: description, widget: string}
           # - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}

@@ -13,6 +13,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         subtitle={data.subtitle}
         about_title={data.about_title}
         about_text={data.about_text}
+        free_section={data.free_section}
+        landing_images={data.landing_images}
       />
     )
   } else {
