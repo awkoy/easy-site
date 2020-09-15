@@ -3,16 +3,7 @@ heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 titlebottom: з США та Китаю
 templateKey: index-page
-main_logo: /img/main-logo.svg
-title_top: Доставка та викуп
-title_bottom: з США та Китаю
-subtitle: Завантаж в додаток фото або назву товару, а ми придбаємо його та
-  доставимо до відділення Нової Пошти
 about_title: EasyGet
-about_text: EasyGet — інструмент для зручної доставки та покупки товарів з
-  іноземних сайтів. Ви можете придбати товар самостійно або просто додати його
-  фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму
-  відділенні Нової Пошти.
 mainpitch:
   title: Why Kaldi
   description: >
@@ -55,6 +46,33 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+title_top: Доставка та викуп
+main_logo: /img/main-logo.svg
+title_bottom: з США та Китаю
+subtitle: Завантаж в додаток фото або назву товару, а ми придбаємо його та
+  доставимо до відділення Нової Пошти
+free_section:
+  - image: /img/free1.png
+    title: Безкоштовно
+    subtitle: Фотографування товару на складi
+    text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
+      сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
+      назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
+      Нової Пошти.
+  - image: /img/free2.png
+    title: Безкоштовно
+    subtitle: Доставка до “Нової Пошти”
+    text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
+      сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
+      назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
+      Нової Пошти.
+  - image: /img/free3.png
+    title: Безкоштовно
+    text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
+      сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
+      назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
+      Нової Пошти.
+    subtitle: Розділення великого замовлення
 title: Great coffee with a conscience
 main:
   heading: Great coffee with no compromises
@@ -78,4 +96,8 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 titletop: Доставка та викуп
+about_text: EasyGet — інструмент для зручної доставки та покупки товарів з
+  іноземних сайтів. Ви можете придбати товар самостійно або просто додати його
+  фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму
+  відділенні Нової Пошти.
 ---
