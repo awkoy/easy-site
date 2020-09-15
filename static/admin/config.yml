@@ -36,12 +36,19 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: MainLogo, name: main_logo, widget: image}
           - {label: TitleTop, name: title_top, widget: string}
           - {label: TitleBottom, name: title_bottom, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Subtitle, name: subtitle, widget: text}
           - {label: AboutTitle, name: about_title, widget: string}
-          - {label: AboutText, name: about_text, widget: string}
+          - {label: AboutText, name: about_text, widget: text}
+          - label: FreeSection
+            name: free_section
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Text, name: text, widget: text}
           # - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
           # - {label: Description, name: description, widget: string}
           # - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}

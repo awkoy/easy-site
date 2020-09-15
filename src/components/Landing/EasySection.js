@@ -1,5 +1,6 @@
 import React from 'react'
 
+import logo from '../../img/main-logo.svg'
 import easy1 from '../../img/easy1.png'
 import easy2 from '../../img/easy2.png'
 import easy3 from '../../img/easy3.png'
@@ -7,7 +8,6 @@ import easy4 from '../../img/easy4.png'
 import easy5 from '../../img/easy5.png'
 
 const EeasySection = ({
-    main_logo,
     title_top,
     title_bottom,
     subtitle
@@ -15,7 +15,7 @@ const EeasySection = ({
     return (
         <section className="landing-easy is-rounded-bottom">
             <div className="container">
-                <img src={main_logo} alt="Main logo" className="landing-easy__logo" />
+                <img src={logo} alt="Main logo" className="landing-easy__logo" />
                 <h1 className="main-title">
                     {title_top} <span>{title_bottom}</span>
                 </h1>

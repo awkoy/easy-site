@@ -15,17 +15,17 @@ import CompareSection from '../components/Landing/CompareSection'
 import FeedbackSection from '../components/Landing/FeedbackSection'
 
 export const IndexPageTemplate = ({
-  main_logo,
   title_top,
   title_bottom,
   subtitle,
   about_title,
   about_text,
+  free_section
 }) => (
     <>
-      <EeasySection main_logo={main_logo} title_top={title_top} title_bottom={title_bottom} subtitle={subtitle} />
-      <AboutSection />
-      <FreeSection />
+      <EeasySection title_top={title_top} title_bottom={title_bottom} subtitle={subtitle} />
+      <AboutSection about_title={about_title} about_text={about_text} />
+      <FreeSection free_section={free_section} />
       <HowSection />
       <PriceSection />
       <OkaySection />
@@ -37,12 +37,12 @@ export const IndexPageTemplate = ({
   )
 
 IndexPageTemplate.propTypes = {
-  main_logo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title_top: PropTypes.string,
   title_bottom: PropTypes.string,
   subtitle: PropTypes.string,
   about_title: PropTypes.string,
   about_text: PropTypes.string,
+  free_section: PropTypes.array
 }
 
 const IndexPage = ({ data }) => {
@@ -51,12 +51,12 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        main_logo={frontmatter.main_logo}
         title_top={frontmatter.title_top}
         title_bottom={frontmatter.title_bottom}
         subtitle={frontmatter.subtitle}
         about_title={frontmatter.about_title}
         about_text={frontmatter.about_text}
+        free_section={frontmatter.free_section}
       />
     </Layout>
   )
@@ -76,7 +76,12 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        
+        title_top
+        title_bottom
+        subtitle
+        about_title
+        about_text
+        free_section
       }
     }
   }

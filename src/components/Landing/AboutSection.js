@@ -3,7 +3,7 @@ import aboutPhone from '../../img/about-phone.png'
 
 import DownloadApp from '../DownloadApp'
 
-const AboutSection = () => {
+const AboutSection = ({about_title, about_text}) => {
     return (
         <section className="landing-about">
             <div className="container">
@@ -11,8 +11,8 @@ const AboutSection = () => {
                     <img src={aboutPhone} alt="About Image" />
                 </div>
                 <div className="landing-about__info">
-                    <h2 className="title">EasyGet</h2>
-                    <div className="text">EasyGet — інструмент для зручної доставки та покупки товарів з іноземних сайтів. Ви можете придбати товар самостійно або просто додати його фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні Нової Пошти.</div>
+                    <h2 className="title">{about_title}</h2>
+                    <div className="text">{about_text}</div>
                     <DownloadApp />
                 </div>
             </div>
