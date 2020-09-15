@@ -21,13 +21,6 @@ export const IndexPageTemplate = ({
   subtitle,
   about_title,
   about_text,
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
 }) => (
     <>
       <EeasySection main_logo={main_logo} title_top={title_top} title_bottom={title_bottom} subtitle={subtitle} />
@@ -50,13 +43,6 @@ IndexPageTemplate.propTypes = {
   subtitle: PropTypes.string,
   about_title: PropTypes.string,
   about_text: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -71,11 +57,6 @@ const IndexPage = ({ data }) => {
         subtitle={frontmatter.subtitle}
         about_title={frontmatter.about_title}
         about_text={frontmatter.about_text}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -95,25 +76,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
+        
       }
     }
   }
