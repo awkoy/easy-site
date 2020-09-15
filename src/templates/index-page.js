@@ -81,7 +81,11 @@ export const pageQuery = graphql`
         subtitle
         about_title
         about_text
-        free_section
+        free_section {
+          title
+          subtitle
+          text
+        }
       }
     }
   }
