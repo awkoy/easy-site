@@ -1,10 +1,11 @@
 ---
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+titlebottom: з США та Китаю
 templateKey: index-page
 main_logo: /img/main-logo.svg
-titletop: Доставка та викуп
-titlebottom: з США та Китаю
+title_top: Доставка та викуп
+title_bottom: з США та Китаю
 subtitle: Завантаж в додаток фото або назву товару, а ми придбаємо його та
   доставимо до відділення Нової Пошти
 about_title: EasyGet
@@ -76,4 +77,5 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
+titletop: Доставка та викуп
 ---
