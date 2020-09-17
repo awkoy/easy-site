@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 
 import DownloadApp from '../DownloadApp';
 
-const HowSection = ({how_title, how_steps}) => {
+const HowSection = ({how}) => {
     const [activeTab, setActiveTab] = useState(0)
     return (
         <section className="landing-how">
             <div className="container">
-                <h2 className="title">{how_title}</h2>
+                <h2 className="title">{how.title}</h2>
                 <div className="landing-how__tabs">
                     <div onClick={() => setActiveTab(0)} className={`landing-how__tab ${activeTab === 0 ? 'is-active' : ''}`}>Замовлення доставки</div>
                     <div onClick={() => setActiveTab(1)} className={`landing-how__tab ${activeTab === 1 ? 'is-active' : ''}`}>Покупка товару за мене</div>
@@ -18,7 +18,7 @@ const HowSection = ({how_title, how_steps}) => {
                     </DownloadApp>
                 </div>
                 <div className="landing-how__container">
-                    {Object.values(how_steps).map((steps, i) => (
+                    {[how.order_steps, how.buy_steps].map((steps, i) => (
                         <div key={i} className={`landing-how__content ${activeTab === i ? 'is-active' : ''}`}>
                             {steps.map(({title, text}, i) => (
                                 <div key={i} className="landing-how__step">

@@ -1,31 +1,21 @@
 import React from 'react'
+import EasyImage from '../Common/EasyImg'
 
-import  okayImg from '../../img/okay.png'
-
-const OkaySection = () => {
+const OkaySection = ({okay}) => {
     return (
         <section className="landing-okay">
             <div className="container">
                 <div className="landing-okay__left">
-                    <img src={okayImg} alt="Okay image"/>
+                    <EasyImage image={okay.image} />
                 </div>
                 <div className="landing-okay__right">
                     <h2 className="landing-okay__title title">
-                        Немає проблем
+                        {okay.title}
                     </h2>
                     <ul className="landing-okay__list">
-                        <li className="landing-okay__list-item">
-                            Гарантовано отримаєте посилку у вашому відділенні “Нової Пошти” вашого міста
-                        </li>
-                        <li className="landing-okay__list-item">
-                            Ви завжди будете знати де ваша посилка
-                        </li>
-                        <li className="landing-okay__list-item">
-                            Один додаток EasyGet замінює 5 додатків та 3 сайти наших конкурентів
-                        </li>
-                        <li className="landing-okay__list-item">
-                            Просто, зрозуміло, в декілька кліків і без проблем
-                        </li>
+                        {okay.list.map(({text}, i) => (
+                            <li key={i} className="landing-okay__list-item">{text}</li>
+                        ))}
                     </ul>
                 </div>
             </div>

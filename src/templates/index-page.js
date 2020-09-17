@@ -15,54 +15,47 @@ import CompareSection from '../components/Landing/CompareSection'
 import FeedbackSection from '../components/Landing/FeedbackSection'
 
 export const IndexPageTemplate = ({
-  title_top,
-  title_bottom,
-  subtitle,
-  about_title,
-  about_text,
-  aboutPhone,
-  free_section,
-  how_title,
-  how_steps,
+  easy,
+  about,
+  free,
+  how,
+  shops,
+  feedbacks,
+  okay,
+  cheapest,
   landing_images
-}) => (
+}) => {
+  console.log('data', cheapest)
+  return (
     <>
-      <EeasySection landing_images={landing_images} title_top={title_top} title_bottom={title_bottom} subtitle={subtitle} />
-      <AboutSection about_title={about_title} about_text={about_text} aboutPhone={landing_images.about_phone} />
-      <FreeSection free_section={free_section} />
-      <HowSection how_title={how_title} how_steps={how_steps} />
+      <EeasySection easy={easy} landing_images={landing_images} />
+      <AboutSection about={about} />
+      <FreeSection free={free} />
+      <HowSection how={how} />
       <PriceSection />
-      <OkaySection />
-      <CheapestSection />
-      <EcommerceSection />
-      <CompareSection />
-      <FeedbackSection />
+      <OkaySection okay={okay} />
+      <CheapestSection cheapest={cheapest} />
+      {/* <EcommerceSection shops={shops} /> */}
+      {/* <CompareSection /> */}
+      {/* <FeedbackSection feedbacks={feedbacks} /> */}
     </>
   )
-
-IndexPageTemplate.propTypes = {
-  title_top: PropTypes.string,
-  title_bottom: PropTypes.string,
-  subtitle: PropTypes.string,
-  about_title: PropTypes.string,
-  about_text: PropTypes.string,
-  free_section: PropTypes.array
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  console.log('frontmatter', frontmatter)
   return (
     <Layout>
       <IndexPageTemplate
-        title_top={frontmatter.title_top}
-        title_bottom={frontmatter.title_bottom}
-        subtitle={frontmatter.subtitle}
-        about_title={frontmatter.about_title}
-        about_text={frontmatter.about_text}
-        free_section={frontmatter.free_section}
-        how_title={frontmatter.how_title}
-        how_steps={frontmatter.how_steps}
+        easy={frontmatter.easy}
+        about={frontmatter.about}
+        free={frontmatter.free}
+        how={frontmatter.how}
+        shops={frontmatter.shops}
+        feedbacks={frontmatter.feedbacks}
+        okay={frontmatter.okay}
+        cheapest={frontmatter.cheapest}
         landing_images={frontmatter.landing_images}
       />
     </Layout>
@@ -83,16 +76,27 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title_top
-        title_bottom
-        subtitle
-        about_title
-        about_text
-        free_section {
+        easy {
+          title_top
+          title_bottom
+          subtitle
+        }
+        about {
           image {
             childImageSharp {
-              fluid(maxWidth: 450, quality: 80) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          title
+          text
+        }
+        free {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }
@@ -100,15 +104,66 @@ export const pageQuery = graphql`
           subtitle
           text
         }
-        how_title
-        how_steps {
+        how {
+          title
+          order_steps {
+            title
+            text
+          }
           buy_steps {
             title
             text
           }
-          order_steps {
-            title
+        }
+        shops {
+          title
+          subtitle
+          list {
+            shop {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+          }
+        }
+        feedbacks {
+          title
+          list {
+            feedback {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+          }
+        }
+        okay {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          title
+          list {
             text
+          }
+        }
+        cheapest {
+          title
+          products {
+            name
+            image {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
           }
         }
         landing_images {
@@ -141,13 +196,6 @@ export const pageQuery = graphql`
             }
           }
           easy5 {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
-            }
-          }
-          about_phone {
             childImageSharp {
               fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid_noBase64

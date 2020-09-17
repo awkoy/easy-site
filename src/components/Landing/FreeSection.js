@@ -1,23 +1,19 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { EffectFade } from 'swiper'
-import PreviewCompatibleImage from '../PreviewCompatibleImage'
 
 import 'swiper/swiper.scss'
 import 'swiper/components/effect-fade/effect-fade.scss'
 
-import free1 from '../../img/free1.png'
-import free2 from '../../img/free2.png'
-import free3 from '../../img/free3.png'
-
 import {IconLeft, IconRight} from '../Common/icons';
+import EasyImage from '../Common/EasyImg'
 
 SwiperCore.use([EffectFade]);
 
 const Slide = ({ title, subtitle, text, image }) => (
     <div className="landing-free__slide">
         <div className="landing-free__photo">
-            <PreviewCompatibleImage imageInfo={{image}} />
+            <EasyImage image={image} />
         </div>
         <div className="landing-free__content">
             <h2 className="landing-free__title title">{title}</h2>
@@ -27,7 +23,7 @@ const Slide = ({ title, subtitle, text, image }) => (
     </div>
 );
 
-const FreeSection = ({free_section}) => {
+const FreeSection = ({free}) => {
     const [swiper, setSwiper] = useState({});
     
     return (
@@ -39,7 +35,7 @@ const FreeSection = ({free_section}) => {
                     loop
                     onSwiper={(s) => setSwiper(s)}
                 >
-                    {free_section.map(d => <SwiperSlide key={d.subtitle}><Slide {...d} /></SwiperSlide>)}
+                    {free.map(d => <SwiperSlide key={d.subtitle}><Slide {...d} /></SwiperSlide>)}
                 </Swiper>
                 <div className="easy-slider__prev" onClick={() => swiper.slidePrev()}><IconLeft /></div>
                 <div className="easy-slider__next" onClick={() => swiper.slideNext()}><IconRight /></div>
