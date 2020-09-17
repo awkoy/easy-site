@@ -84,7 +84,7 @@ export const pageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
@@ -95,7 +95,7 @@ export const pageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
@@ -129,7 +129,7 @@ export const pageQuery = graphql`
             feedback {
               childImageSharp {
                 fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
@@ -139,7 +139,7 @@ export const pageQuery = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
@@ -155,7 +155,7 @@ export const pageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
@@ -173,35 +173,35 @@ export const pageQuery = graphql`
           easy1 {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
           easy2 {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
           easy3 {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
           easy4 {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
           easy5 {
             childImageSharp {
               fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
