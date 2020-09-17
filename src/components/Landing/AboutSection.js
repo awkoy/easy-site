@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 
 import DownloadApp from '../DownloadApp'
 import EasyImage from '../Common/EasyImg'

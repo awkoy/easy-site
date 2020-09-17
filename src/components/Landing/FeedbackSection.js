@@ -1,20 +1,16 @@
 import React from 'react'
 
-import feed1 from '../../img/coment_1.png'
-import feed2 from '../../img/coment_2.png'
-import feed3 from '../../img/coment_3.png'
+import EasyImage from '../Common/EasyImg'
 
-const FeedbackSection = () => {
+const FeedbackSection = ({feedbacks}) => {
     return (
-        <section className="landing-feedback">
+        <section className="landing-feedback is-rounded-top">
         <div className="container">
           <h2 className="landing-feedback__title">
-            Відгуки клієнтів
+            {feedbacks.title}
           </h2>
           <div className="landing-feedback__list">
-            <img src={feed1}/>
-            <img src={feed2}/>
-            <img src={feed3}/>
+            {feedbacks.list.map(({feedback}, i) => <div key={i} className="landing-feedback__img"><EasyImage image={feedback} /></div>)}
           </div>
         </div>
       </section>

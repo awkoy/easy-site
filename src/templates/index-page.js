@@ -11,7 +11,7 @@ import PriceSection from '../components/Landing/PriceSection'
 import OkaySection from '../components/Landing/OkaySection'
 import CheapestSection from '../components/Landing/CheapestSection'
 import EcommerceSection from '../components/Landing/EcommerceSection'
-import CompareSection from '../components/Landing/CompareSection'
+// import CompareSection from '../components/Landing/CompareSection'
 import FeedbackSection from '../components/Landing/FeedbackSection'
 
 export const IndexPageTemplate = ({
@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
   cheapest,
   landing_images
 }) => {
-  console.log('data', cheapest)
+  console.log('data', shops)
   return (
     <>
       <EeasySection easy={easy} landing_images={landing_images} />
@@ -35,16 +35,15 @@ export const IndexPageTemplate = ({
       <PriceSection />
       <OkaySection okay={okay} />
       <CheapestSection cheapest={cheapest} />
-      {/* <EcommerceSection shops={shops} /> */}
+      <EcommerceSection shops={shops} />
       {/* <CompareSection /> */}
-      {/* <FeedbackSection feedbacks={feedbacks} /> */}
+      <FeedbackSection feedbacks={feedbacks} />
     </>
   )
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  console.log('frontmatter', frontmatter)
   return (
     <Layout>
       <IndexPageTemplate
@@ -120,11 +119,7 @@ export const pageQuery = graphql`
           subtitle
           list {
             shop {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid_noBase64
-                }
-              }
+              publicURL
             }
           }
         }
@@ -163,6 +158,14 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid_noBase64
                 }
               }
+            }
+            compare {
+              logo {
+                publicURL
+              }
+              title
+              duration
+              price
             }
           }
         }

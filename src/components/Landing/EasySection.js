@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import logo from '../../img/main-logo.svg'
 import EasyImage from '../Common/EasyImg'
 

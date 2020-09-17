@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
 
 const Navbar = () => {
   const [navBarActiveClass, setNavBarActiveClass] = useState('');
@@ -29,7 +27,7 @@ const Navbar = () => {
           <Link className="navbar__link" to="/tracking">
             Трекінг
           </Link>
-          <a href="tel:0800567856" className="navbar__phone">0 800 56 7856</a>
+          <a href="tel:0800217980" className="navbar__phone">0 800 21 7980</a>
           <a
             className="easy-btn"
             href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
