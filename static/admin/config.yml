@@ -36,50 +36,84 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: TitleTop, name: title_top, widget: string}
-          - {label: TitleBottom, name: title_bottom, widget: string}
-          - {label: Subtitle, name: subtitle, widget: text}
-          - {label: AboutTitle, name: about_title, widget: string}
-          - {label: AboutText, name: about_text, widget: text}
+          - label: EasySection
+            name: easy
+            widget: object
+            fields: [
+              {label: TitleTop, name: title_top, widget: string},
+              {label: TitleBottom, name: title_bottom, widget: string},
+              {label: Subtitle, name: subtitle, widget: text}
+            ]
+          - label: AboutSection
+            name: about
+            widget: object
+            fields: [
+              {label: Image, name: image, widget: image},
+              {label: Title, name: title, widget: string},
+              {label: Text, name: text, widget: text},
+            ]
           - label: FreeSection
-            name: free_section
+            name: free
             widget: list
             fields:
               - {label: Image, name: image, widget: image}
               - {label: Title, name: title, widget: string}
               - {label: Subtitle, name: subtitle, widget: string}
               - {label: Text, name: text, widget: text}
-          - {label: HowTitle, name: how_title, widget: string}
-          - label: HowSteps
-            name: how_steps
+          - label: HowSection
+            name: how
             widget: object
-            fields: [{label: Order Steps, name: order_steps, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}, {label: Buy Steps, name: buy_steps, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]
+            fields: [
+              {label: Title, name: title, widget: string},
+              {label: Order Steps, name: order_steps, widget: list, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]},
+              {label: Buy Steps, name: buy_steps, widget: list, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]}
+            ]
+          - label: OkaySection
+            name: okay
+            widget: object
+            fields: [
+              {label: Image, name: image, widget: image},
+              {label: Title, name: title, widget: string},
+              {label: OkayList, name: list, widget: list, fields: [{label: Text, name: text, widget: text}]}
+            ]
+          - label: CheapestSection
+            name: cheapest
+            widget: object
+            fields: [
+              {label: Title, name: title, widget: string},
+              {label: Products, name: products, widget: list, fields: [
+                {label: Name, name: name, widget: string},
+                {label: Image, name: image, widget: image},
+                {label: CompareList, name: compare, widget: list, fields: [
+                  {label: Logo, name: logo, widget: image},
+                  {label: Title, name: title, widget: string},
+                  {label: Duration, name: duration, widget: string},
+                  {label: Price, name: price, widget: string}
+                ]}
+              ]}
+            ]
+          - {label: ShopsSection, name: shops, widget: object, fields: [
+              {label: ShopsTitle, name: title, widget: string},
+              {label: ShopsSubtitle, name: subtitle, widget: text},
+              {label: ShopsList, name: list, widget: list, fields: [{label: Shop, name: shop, widget: image}]}
+            ]}
+          - {label: FeedbackSection, name: feedbacks, widget: object, fields: [
+              {label: FeedbackTitle, name: title, widget: string},
+              {label: FeedbackList, name: list, widget: list, fields: [{label: Feedback, name: feedback, widget: image}]}
+            ]}
           - label: LandingImages
             name: landing_images
             widget: object
-            fields: [{label: Easy1, name: easy1, widget: image},{label: Easy2, name: easy2, widget: image},{label: Easy3, name: easy3, widget: image},{label: Easy4, name: easy4, widget: image},{label: Easy5, name: easy5, widget: image},{label: AboutPhone, name: about_phone, widget: image}]
-          # - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          # - {label: Description, name: description, widget: string}
-          # - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          # - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-      # - file: "src/pages/about/index.md"
-      #   label: "About"
-      #   name: "about"
-      #   fields:
-      #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-      #     - {label: "Title", name: "title", widget: "string"}
-      #     - {label: "Body", name: "body", widget: "markdown"}
-      # - file: "src/pages/products/index.md"
-      #   label: "Products Page"
-      #   name: "products"
-      #   fields:
-      #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-      #     - {label: Title, name: title, widget: string}
-      #     - {label: Image, name: image, widget: image}
-      #     - {label: Heading, name: heading, widget: string}
-      #     - {label: Description, name: description, widget: string}
-      #     - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-      #     - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-      #     - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-      #     - {label: Full_image, name: full_image, widget: image}
-      #     - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+            fields: [
+              {label: Easy1, name: easy1, widget: image},
+              {label: Easy2, name: easy2, widget: image},
+              {label: Easy3, name: easy3, widget: image},
+              {label: Easy4, name: easy4, widget: image},
+              {label: Easy5, name: easy5, widget: image}
+            ]

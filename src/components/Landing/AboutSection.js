@@ -1,21 +1,9 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from "gatsby"
 
 import DownloadApp from '../DownloadApp'
 
-const AboutSection = ({ about_title, about_text }) => {
-    const { aboutPhone } = useStaticQuery(graphql`
-        query HeaderQuery {
-            aboutPhone: file(relativePath: { eq: "about-phone.png" }) {
-                childImageSharp {
-                  fluid(maxWidth: 600) {
-                    ...GatsbyImageSharpFluid_noBase64
-                  }
-                }
-            }
-        }
-    `);
+const AboutSection = ({ about_title, about_text, aboutPhone }) => {
 
     return (
         <section className="landing-about">

@@ -21,13 +21,16 @@ export const IndexPageTemplate = ({
   about_title,
   about_text,
   aboutPhone,
-  free_section
+  free_section,
+  how_title,
+  how_steps,
+  landing_images
 }) => (
     <>
-      <EeasySection title_top={title_top} title_bottom={title_bottom} subtitle={subtitle} />
-      <AboutSection about_title={about_title} about_text={about_text} aboutPhone={aboutPhone} />
+      <EeasySection landing_images={landing_images} title_top={title_top} title_bottom={title_bottom} subtitle={subtitle} />
+      <AboutSection about_title={about_title} about_text={about_text} aboutPhone={landing_images.about_phone} />
       <FreeSection free_section={free_section} />
-      <HowSection />
+      <HowSection how_title={how_title} how_steps={how_steps} />
       <PriceSection />
       <OkaySection />
       <CheapestSection />
@@ -58,6 +61,8 @@ const IndexPage = ({ data }) => {
         about_title={frontmatter.about_title}
         about_text={frontmatter.about_text}
         free_section={frontmatter.free_section}
+        how_title={frontmatter.how_title}
+        how_steps={frontmatter.how_steps}
         landing_images={frontmatter.landing_images}
       />
     </Layout>
@@ -94,6 +99,61 @@ export const pageQuery = graphql`
           title
           subtitle
           text
+        }
+        how_title
+        how_steps {
+          buy_steps {
+            title
+            text
+          }
+          order_steps {
+            title
+            text
+          }
+        }
+        landing_images {
+          easy1 {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          easy2 {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          easy3 {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          easy4 {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          easy5 {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          about_phone {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
         }
       }
     }
