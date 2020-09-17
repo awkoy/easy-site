@@ -37,6 +37,118 @@ free:
 how:
   title: Як це працює?
   order_steps:
+    - title: Отримай «Easy адресу» складу  в США або Китаї
+      text: Це адреса складу EasyGet, куди інтернет-магазин вiдправить ваше замовлення
+    - title: Самостiйно  придбайте товар  в інтернет-магазинi
+      text: закордоном, та вкажіть «Easy адресу» складу як адресу доставки
+    - title: Дочекайтеся прибуття товару на склад «EasyGet»
+      text: перевiрте сфотографований нами товар та сплатiть доставку
+    - title: Отримайте товар  у відділеннi  «Нової Пошти»
+      text: або кур'єром за вашою адресою
+  buy_steps:
+    - title: Отримай  «Easy адресу» складу  в США або Китаї
+      text: Це адреса складу EasyGet, куди інтернет-магазин вiдправить ваше замовлення
+    - title: Самостiйно  придбайте товар  в інтернет-магазинi
+      text: закордоном, та вкажіть «Easy адресу» складу як адресу доставки
+    - title: Дочекайтеся прибуття товару на склад «EasyGet»
+      text: перевiрте сфотографований нами товар та сплатiть доставку
+    - title: Отримайте товар  у відділеннi  «Нової Пошти»
+      text: або кур'єром за вашою адресою
+landing_images:
+  easy1: /img/easy1.png
+  easy2: /img/easy2.png
+  easy3: /img/easy3.png
+  easy4: /img/easy4.png
+  easy5: /img/easy5.png
+  about_phone: /img/about-phone.png
+about_title: EasyGet
+how_title: Як це працює?
+shops:
+  title: Популярні магазини
+  subtitle: Не обмежуйтеся цим переліком, магазинів безліч! Купуйте де-завгодно,
+    ми доставимо
+  list:
+    - shop: /img/ecommerce1.svg
+feedbacks:
+  title: Відгуки клієнтів
+  list:
+    - feedback: /img/coment_1.png
+    - feedback: /img/coment_2.png
+    - feedback: /img/coment_3.png
+title_top: Доставка та викуп
+free_section:
+  - image: /img/free1.png
+    title: Безкоштовно
+    subtitle: Фотографування товару на складi
+    text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
+      сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
+      назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
+      Нової Пошти.
+  - image: /img/free2.png
+    title: Безкоштовно
+    subtitle: Доставка до “Нової Пошти”
+    text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
+      сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
+      назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
+      Нової Пошти.
+  - image: /img/free3.png
+    title: Безкоштовно
+    text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
+      сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
+      назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
+      Нової Пошти.
+    subtitle: Розділення великого замовлення
+title_bottom: з США та Китаю
+okay:
+  image: /img/okay.png
+  title: Немає проблем
+  list:
+    - text: Гарантовано отримаєте посилку у вашому відділенні “Нової Пошти” вашого
+        міста
+    - text: |
+        Ви завжди будете знати де ваша посилка
+    - text: Один додаток EasyGet замінює 5 додатків та 3 сайти наших конкурентів
+    - text: Просто, зрозуміло, в декілька кліків і без проблем
+cheapest:
+  title: У нас дешевше
+  products:
+    - name: Жіноча сумка
+      image: /img/cheapest1.png
+      compare:
+        - logo: /img/c-easy.svg
+          title: EasyGet
+          duration: 12 днів
+          price: 999 ₴
+        - logo: /img/c-ali.svg
+          title: AliExpress
+          duration: 40 днів
+          price: 1299 ₴
+    - name: Навушники
+      image: /img/cheapest2.png
+      compare:
+        - logo: /img/c-easy.svg
+          title: EasyGet
+          duration: 12 днів
+          price: 599  ₴
+        - logo: /img/c-ali.svg
+          title: AliExpress
+          duration: 44 днів
+          price: 899 ₴
+    - name: Блендер
+      image: /img/cheapest3.png
+      compare:
+        - logo: /img/c-easy.svg
+          title: EasyGet
+          duration: 12 днів
+          price: 1 599  ₴
+        - logo: /img/c-ali.svg
+          duration: 12 днів
+          price: 1 899  ₴
+          title: AliExpress
+subtitle: Завантаж в додаток фото або назву товару, а ми придбаємо його та
+  доставимо до відділення Нової Пошти
+how_steps:
+  order_steps:
     - title: Отримайте  «Easy адресу» складу  в США або Китаї
       text: Це адреса складу EasyGet, куди інтернет-магазин вiдправить ваше замовлення
     - title: Самостiйно  придбайте товар  в інтернет-магазинi
@@ -54,42 +166,8 @@ how:
       text: перевiрте сфотографований нами товар та сплатiть доставку
     - title: Отримайте товар  у відділеннi  «Нової Пошти»
       text: або кур'єром за вашою адресою
-shops:
-  title: Популярні магазини
-  subtitle: Не обмежуйтеся цим переліком, магазинів безліч! Купуйте де-завгодно,
-    ми доставимо
-  list:
-    - shop: /img/ecommerce1.svg
-feedbacks:
-  title: Відгуки клієнтів
-  list:
-    - feedback: /img/coment_1.png
-    - feedback: /img/coment_2.png
-    - feedback: /img/coment_3.png
-okay:
-  image: /img/okay.png
-  title: Немає проблем
-  list:
-    - text: Гарантовано отримаєте посилку у вашому відділенні “Нової Пошти” вашого
-        міста
-    - text: |
-        Ви завжди будете знати де ваша посилка
-    - text: Один додаток EasyGet замінює 5 додатків та 3 сайти наших конкурентів
-    - text: Просто, зрозуміло, в декілька кліків і без проблем
-cheapest:
-  title: У нас дешевше
-  products:
-    - name: Жіноча сумка
-      image: /img/cheapest1.png
-    - name: Навушники
-      image: /img/cheapest2.png
-      compare: []
-    - name: Блендер
-      image: /img/cheapest3.png
-landing_images:
-  easy1: /img/easy1.png
-  easy2: /img/easy2.png
-  easy3: /img/easy3.png
-  easy4: /img/easy4.png
-  easy5: /img/easy5.png
+about_text: EasyGet — інструмент для зручної доставки та покупки товарів з
+  іноземних сайтів. Ви можете придбати товар самостійно або просто додати його
+  фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму
+  відділенні Нової Пошти.
 ---
