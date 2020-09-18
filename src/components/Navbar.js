@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import { IconClose } from './Common/icons';
 import SocialList from './Common/SocialList';
 import { firebaseLog } from '../utils/analytics';
@@ -27,7 +27,7 @@ const Navbar = () => {
           id="navMenu"
           className={`navbar__menu ${navBarActiveClass}`}
         >
-          <Link className="navbar__link" to="/products">
+          {/* <Link className="navbar__link" to="/products">
             Скільки це коштує
             </Link>
           <Link className="navbar__link" to="/blog">
@@ -38,7 +38,7 @@ const Navbar = () => {
             </Link>
           <Link className="navbar__link" to="/tracking">
             Трекінг
-          </Link>
+          </Link> */}
 
           <span className="navbar__menu__close" onClick={() => setNavBarActiveClass('')}><IconClose /></span>
         </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="navbar__social"><SocialList /></div>
         <a
             className="easy-btn"
-            href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+            href="https://app.easyget.com.ua/"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => firebaseLog('try_easyget')} 
