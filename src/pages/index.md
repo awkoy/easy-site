@@ -4,13 +4,13 @@ easy:
   title_top: Доставка та викуп
   title_bottom: з США та Китаю
   subtitle: Завантаж в додаток фото або назву товару, а ми придбаємо його та
-    доставимо до відділення Нової Пошти
+    доставимо до відділення Нової П
 about:
   image: /img/about-phone.png
   text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
     сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
     назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
-    Нової Пошти.
+    Нов
   title: EasyGet
 free:
   - image: /img/free1.png
@@ -54,24 +54,6 @@ how:
       text: перевiрте сфотографований нами товар та сплатiть доставку
     - title: Отримайте товар у відділеннi «Нової Пошти»
       text: або кур'єром за вашою адресою
-landing_images:
-  easy1: /img/easy1.png
-  easy2: /img/easy2.png
-  easy3: /img/easy3.png
-  easy4: /img/easy4.png
-  easy5: /img/easy5.png
-shops:
-  title: Популярні магазини
-  subtitle: Не обмежуйтеся цим переліком, магазинів безліч! Купуйте де-завгодно,
-    ми доставимо
-  list:
-    - shop: /img/ecommerce1.svg
-feedbacks:
-  title: Відгуки клієнтів
-  list:
-    - feedback: /img/coment_1.png
-    - feedback: /img/coment_2.png
-    - feedback: /img/coment_3.png
 okay:
   image: /img/okay.png
   title: Немає проблем
@@ -96,6 +78,10 @@ cheapest:
           title: AliExpress
           duration: 40 днів
           price: 1299 ₴
+        - logo: /img/c-inst.svg
+          title: Instagram
+          duration: 1-2 днiв
+          price: 2199 ₴
     - name: Навушники
       image: /img/cheapest2.png
       compare:
@@ -118,4 +104,22 @@ cheapest:
           duration: 12 днів
           price: 1 899  ₴
           title: AliExpress
+shops:
+  title: Популярні магазини
+  subtitle: Не обмежуйтеся цим переліком, магазинів безліч! Купуйте де-завгодно,
+    ми доставимо
+  list:
+    - shop: /img/ecommerce1.svg
+feedbacks:
+  title: Відгуки клієнтів
+  list:
+    - feedback: /img/coment_1.png
+    - feedback: /img/coment_2.png
+    - feedback: /img/coment_3.png
+landing_images:
+  easy1: /img/easy1.png
+  easy2: /img/easy2.png
+  easy3: /img/easy3.png
+  easy4: /img/easy4.png
+  easy5: /img/easy5.png
 ---
