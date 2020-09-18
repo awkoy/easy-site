@@ -45,11 +45,12 @@ how:
     - title: Отримайте товар у відділеннi «Нової Пошти»
       text: або кур'єром за вашою адресою
   buy_steps:
-    - title: Отримай  «Easy адресу» складу в США або Китаї
-      text: Це адреса складу EasyGet, куди інтернет-магазин вiдправить ваше замовлення
-    - title: Самостiйно  придбайте товар в інтернет-магазинi
-      text: закордоном, та вкажіть «Easy адресу» складу як адресу доставки
-    - title: Дочекайтеся прибуття товару на склад «EasyGet»
+    - title: Додайте  бажаний товар в «EasyGet»
+      text: вказавши назву або фото або посилання на товар  з будь-якого
+        інтернет-магазину  США чи Китаю
+    - title: Наш менеджер за вас знайде та придбає бажаний товар
+      text: після того я ви його підтвердите та оплатите
+    - title: Дочекайтеся  прибуття товару  на склад «EasyGet»
       text: перевiрте сфотографований нами товар та сплатiть доставку
     - title: Отримайте товар у відділеннi «Нової Пошти»
       text: або кур'єром за вашою адресою
@@ -72,37 +73,45 @@ cheapest:
         - logo: /img/c-easy.svg
           title: EasyGet
           duration: 12 днів
-          price: 999 ₴
+          price: 310 ₴
         - logo: /img/c-ali.svg
           title: AliExpress
           duration: 40 днів
-          price: 1299 ₴
+          price: 443 ₴
         - logo: /img/c-inst.svg
           title: Instagram
           duration: 1-2 днiв
-          price: 2199 ₴
+          price: 1 050 ₴
     - name: Навушники
       image: /img/cheapest2.png
       compare:
         - logo: /img/c-easy.svg
           title: EasyGet
           duration: 12 днів
-          price: 599  ₴
+          price: 2 240  ₴
         - logo: /img/c-ali.svg
           title: AliExpress
-          duration: 44 днів
-          price: 899 ₴
+          duration: 40 днів
+          price: 2 706 ₴
+        - logo: /img/rozetka.svg
+          title: Rozetka
+          price: "3 430 ₴ "
+          duration: 1-2 днi
     - name: Блендер
       image: /img/cheapest3.png
       compare:
         - logo: /img/c-easy.svg
           title: EasyGet
           duration: 12 днів
-          price: 1 599  ₴
+          price: 929 ₴
         - logo: /img/c-ali.svg
-          duration: 12 днів
-          price: 1 899  ₴
+          duration: 40 днів
+          price: 1 291 ₴
           title: AliExpress
+        - title: Citrus
+          duration: 1-2 днi
+          price: "1 310 ₴ "
+          logo: /img/citrus.svg
 shops:
   title: Популярні магазини
   subtitle: Не обмежуйтеся цим переліком, магазинів безліч! Купуйте де-завгодно,
