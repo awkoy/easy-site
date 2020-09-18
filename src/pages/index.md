@@ -118,6 +118,12 @@ shops:
     ми доставимо
   list:
     - shop: /img/ecommerce1.svg
+    - shop: /img/tmall.png
+    - shop: /img/1688.png
+    - shop: /img/alibaba.png
+    - shop: /img/amazon.png
+    - shop: /img/6pm.png
+    - shop: /img/ebay.png
 feedbacks:
   title: Відгуки клієнтів
   list:
