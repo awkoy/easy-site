@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { IconClose } from './Common/icons';
+import SocialList from './Common/SocialList';
+import { firebaseLog } from '../utils/analytics';
 
 const Navbar = () => {
   const [navBarActiveClass, setNavBarActiveClass] = useState('');
@@ -40,12 +42,14 @@ const Navbar = () => {
 
           <span className="navbar__menu__close" onClick={() => setNavBarActiveClass('')}><IconClose /></span>
         </div>
-        <a href="tel:0800217980" className="navbar__phone">0 800 21 7980</a>
+        <a onClick={() => firebaseLog('copy_phone_number')} href="tel:0800217980" className="navbar__phone">0 800 21 7980</a>
+        <div className="navbar__social"><SocialList /></div>
         <a
             className="easy-btn"
             href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => firebaseLog('try_easyget')} 
           >
           Спробувати
         </a>

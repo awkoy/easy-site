@@ -60,18 +60,7 @@
             order: 2
             padding: 0
             text-align: right
-            padding-top: 6px
-    &__social-list
-        display: flex
-        justify-content: center
-        align-items: center
-    &__social-item
-        fill: $l-gray
-        padding: 7px
-        transition: .3s
-        &:hover
-            cursor: pointer
-            fill: $yellow
+            padding-top: 12px
     &__logo
         max-width: 162px
         margin-top: -10px
@@ -89,3 +78,15 @@
             max-width: 585px
             +mobile
                 max-width: 100%
+.social-list
+    display: flex
+    align-items: center
+.social-item
+    fill: $l-gray
+    padding: 7px
+    transition: .3s
+    min-width: 38px
+    text-align: center
+    &:hover
+        cursor: pointer
+        fill: $yellow

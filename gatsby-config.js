@@ -74,6 +74,31 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyCRF-a-lQ30gDcSBGColv0-ms8d4a91RTo",
+          authDomain: "easygetcloudmessage.firebaseapp.com",
+          databaseURL: "https://easygetcloudmessage.firebaseio.com",
+          projectId: "easygetcloudmessage",
+          storageBucket: "easygetcloudmessage.appspot.com",
+          messagingSenderId: "930162095286",
+          appId: "1:930162095286:web:d62b1200c3a9b1ba6ca217",
+          measurementId: "G-KRX6KH365B",
+        },
+        features: {     
+          auth: false,       
+          database: false,  
+          firestore: false,
+          storage: false,    
+          messaging: false, 
+          functions: false,  
+          performance: false, 
+          analytics:true,    
+        }, 
+      }
+    },
+    {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IconLeft, IconRight } from '../Common/icons';
 
 import EasyImage from '../Common/EasyImg';
+import { firebaseLog } from '../../utils/analytics';
 
 const CheapestSection = ({ cheapest }) => {
     const [activeItem, setActiveItem] = useState({
@@ -24,6 +25,7 @@ const CheapestSection = ({ cheapest }) => {
             })
         }
     }
+    const logEvent = (item_name) => firebaseLog('buy_product', { item_name })
 
     return (
         <section className="landing-cheapest">
@@ -65,7 +67,7 @@ const CheapestSection = ({ cheapest }) => {
                                 </div>
                                 <div className="landing-cheapest__actions">
                                     <span>Замовте прямо зараз →</span>
-                                    <a href="/" className="easy-btn easy-btn--reverse">Замовити</a>
+                                    <a onClick={() => logEvent(product.name)} href="https://app.easyget.com.ua/" target="_blank" rel="noopener noreferrer" className="easy-btn easy-btn--reverse">Замовити</a>
                                 </div>
                             </div>
                         ))}
