@@ -1,16 +1,26 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import { IconClose } from './Common/icons';
 
 const Navbar = () => {
   const [navBarActiveClass, setNavBarActiveClass] = useState('');
 
   return (
     <nav
-      className="navbar"
+      className={`navbar ${navBarActiveClass}`}
       role="navigation"
       aria-label="main-navigation"
     >
       <div className="container">
+        <div
+            className={`navbar-burger ${navBarActiveClass}`}
+            data-target="navMenu"
+            onClick={() => setNavBarActiveClass('is-active')}
+          >
+          <span />
+          <span />
+          <span />
+        </div>
         <div
           id="navMenu"
           className={`navbar__menu ${navBarActiveClass}`}
@@ -27,25 +37,18 @@ const Navbar = () => {
           <Link className="navbar__link" to="/tracking">
             Трекінг
           </Link>
-          <a href="tel:0800217980" className="navbar__phone">0 800 21 7980</a>
-          <a
+
+          <span className="navbar__menu__close" onClick={() => setNavBarActiveClass('')}><IconClose /></span>
+        </div>
+        <a href="tel:0800217980" className="navbar__phone">0 800 21 7980</a>
+        <a
             className="easy-btn"
             href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Спробувати
-          </a>
-        </div>
-        {/* <div
-          className={`navbar-burger burger ${navBarActiveClass}`}
-          data-target="navMenu"
-          onClick={() => setNavBarActiveClass(navBarActiveClass ? '' : 'is-active')}
-        >
-          <span />
-          <span />
-          <span />
-        </div> */}
+          Спробувати
+        </a>
       </div>
     </nav>
   );

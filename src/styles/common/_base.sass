@@ -7,10 +7,13 @@ section
     position: relative
 
 .container
-    max-width: $container-w;
-    padding-left: $container-p;
-    padding-right: $container-p;
+    max-width: $container-w
+    padding-left: $container-p
+    padding-right: $container-p
     margin: 0 auto;
+    +mobile
+        padding-left: 16px
+        padding-right: 16px
 
 .easy-btn
     background: $black
@@ -27,6 +30,13 @@ section
     transition: background .3s
     padding-left: 30px
     padding-right: 30px
+    +mobile
+        height: 36px
+        line-height: 34px
+        font-size: 14px
+        padding-left: 20px
+        padding-right: 20px
+        min-width: auto
     &:hover
         background: $yellow
     &--reverse
@@ -104,6 +114,9 @@ h1
     span
         display: block
         color: $yellow
+    +mobile
+        font-size: 32px
+        line-height: 40px
 
 h2
     font-size: 54px
@@ -111,12 +124,18 @@ h2
     text-align: center
     font-weight: bold
     color: $black
+    +mobile
+        font-size: 32px
+        line-height: 40px
 
 .text
     font-size: 18px
     line-height: 30px
     color: $gray
     font-weight: 300
+    +mobile
+        font-size: 14px
+        line-height: 24px
 
 .swiper-container-fade .swiper-slide
     background: $white
