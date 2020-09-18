@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import DownloadApp from './DownloadApp'
 
 import mainlogo from '../img/main-logo.svg'
-import { IconFacebook, IconInst, IconTelegram, IconViber } from './Common/icons'
+import SocialList from './Common/SocialList'
 
 const Footer = class extends React.Component {
   render() {
@@ -13,7 +12,8 @@ const Footer = class extends React.Component {
           <div className="footer__top">
             <div className="footer__social">
               <img src={mainlogo} className="footer__logo" />
-              <div className="footer__social-list">
+              <SocialList />
+              {/* <div className="footer__social-list">
                 <a href="/" className="footer__social-item">
                   <IconFacebook />
                 </a>
@@ -26,7 +26,7 @@ const Footer = class extends React.Component {
                 <a href="/" className="footer__social-item">
                   <IconViber />
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="footer__about">
               <div className="text">
