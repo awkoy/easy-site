@@ -119,7 +119,11 @@ export const pageQuery = graphql`
           subtitle
           list {
             shop {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
             }
           }
         }
