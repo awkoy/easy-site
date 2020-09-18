@@ -3,8 +3,7 @@ templateKey: index-page
 easy:
   title_top: Доставка та викуп
   title_bottom: з США та Китаю
-  subtitle: Завантаж в додаток фото або назву товару, а ми придбаємо його та
-    доставимо до відділення Нової П
+  subtitle: Завантаж додаток. CTRL + C, CTRL + V, тиць-тиць, вжух і посилка у тебе
 about:
   image: /img/about-phone.png
   text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
