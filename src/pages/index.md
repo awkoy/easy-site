@@ -117,13 +117,14 @@ shops:
   subtitle: Не обмежуйтеся цим переліком, магазинів безліч! Купуйте де-завгодно,
     ми доставимо
   list:
-    - shop: /img/ecommerce1.svg
+    - shop: /img/taobao.png
     - shop: /img/tmall.png
     - shop: /img/1688.png
     - shop: /img/alibaba.png
     - shop: /img/amazon.png
-    - shop: /img/6pm.png
+    - shop: /img/nike.png
     - shop: /img/ebay.png
+    - shop: /img/6pm.png
 feedbacks:
   title: Відгуки клієнтів
   list:
