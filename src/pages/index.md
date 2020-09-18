@@ -25,10 +25,9 @@ free:
     title: Безкоштовно
     subtitle: Доставка до “Нової Пошти”
   - image: /img/free3.png
-    text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
-      сайтів. Ви можете придбати товар самостійно або просто додати його фото чи
-      назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні
-      Нової Пошти.
+    text: Безкоштовно розділимо ваш великий вантаж на менші для економії на
+      доставці. Для ваших посилок ви можете вибрати різні адреси та отримувачів
+      в Україні.
     subtitle: Розділення великого замовлення
     title: Безкоштовно
 how:
@@ -126,9 +125,9 @@ shops:
 feedbacks:
   title: Відгуки клієнтів
   list:
-    - feedback: /img/coment_1.png
-    - feedback: /img/coment_2.png
-    - feedback: /img/coment_3.png
+    - feedback: /img/group-1010.png
+    - feedback: /img/group-1176.png
+    - feedback: /img/group-1177.png
 landing_images:
   easy1: /img/easy1.png
   easy2: /img/easy2.png
