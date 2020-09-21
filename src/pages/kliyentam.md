@@ -1,4 +1,4 @@
 ---
-title: Hello fitty
+title: Hello fit
 ---
 frefrefer
