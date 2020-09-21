@@ -5,7 +5,7 @@ import DownloadApp from '../DownloadApp';
 const HowSection = ({how}) => {
     const [activeTab, setActiveTab] = useState(0)
     return (
-        <section className="landing-how">
+        <section className="landing-how" id="how">
             <div className="container">
                 <h2 className="title">{how.title}</h2>
                 <div className="landing-how__tabs">

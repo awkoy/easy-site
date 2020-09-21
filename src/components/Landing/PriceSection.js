@@ -6,7 +6,7 @@ import planeEnd from '../../img/plane-end.svg'
 
 const PriceSection = () => {
   return (
-    <section className="landing-price is-rounded-bottom">
+    <section className="landing-price is-rounded-bottom" id="price">
       <img src={planeStart} alt="" className="landing-price__plane-start"/>
       <img src={planeEnd} alt="" className="landing-price__plane-end"/>
       <div className="container">

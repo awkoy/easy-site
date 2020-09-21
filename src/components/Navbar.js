@@ -3,7 +3,28 @@ import React, { useState } from 'react'
 import { IconClose } from './Common/icons';
 import SocialList from './Common/SocialList';
 import { firebaseLog } from '../utils/analytics';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
+const AnchorNavLink = ({path, name, handleClick}) => (
+  <div onClick={handleClick} onKeyPress={handleClick} aria-label="Link" role="button" tabIndex={0}>
+    <AnchorLink className="navbar__link" to={path}>
+      {name}
+    </AnchorLink>
+  </div>
+)
+
+const Anchors = [{
+  path: '/#how',
+  name: 'Як це працює?'
+},
+{
+  path: '/#price',
+  name: 'Скільки це коштує?'
+},
+{
+  path: '/#why',
+  name: 'Чому ми?'
+}]
 const Navbar = () => {
   const [navBarActiveClass, setNavBarActiveClass] = useState('');
 
@@ -43,6 +64,8 @@ const Navbar = () => {
           <Link className="navbar__link" to="/tracking">
             Трекінг
           </Link> */}
+
+          {Anchors.map(({path, name}) => <AnchorNavLink key={path} handleClick={() => setNavBarActiveClass('')} path={path} name={name} />)} 
 
           <span className="navbar__menu__close" aria-label="Close" role="button" tabIndex={0} onClick={() => setNavBarActiveClass('')} onKeyPress={() => setNavBarActiveClass('')}><IconClose /></span>
         </div>

@@ -28,7 +28,7 @@ const CheapestSection = ({ cheapest }) => {
     const logEvent = (item_name) => firebaseLog('buy_product', { item_name })
 
     return (
-        <section className="landing-cheapest">
+        <section className="landing-cheapest" id="why">
             <div className="container">
                 <div className="landing-cheapest__slider">
                     <div style={{ transform: `rotate(${activeItem.rotate}deg` }} className="landing-cheapest__rotate">
