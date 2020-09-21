@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   local_backend: true
   branch: master
+  site_url: https://easyget.com.ua/
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -13,20 +14,15 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - name: "blog"
-  #   label: "Blog"
-  #   folder: "src/pages/blog"
+  # - name: "about-pages"
+  #   label: "About Pages"
+  #   folder: "src/pages/about"
   #   create: true
-  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #   slug: "{{slug}}"
   #   fields:
-  #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+  #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
   #     - {label: "Title", name: "title", widget: "string"}
-  #     - {label: "Publish Date", name: "date", widget: "datetime"}
-  #     - {label: "Description", name: "description", widget: "text"}
-  #     - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-  #     - {label: "Featured Image", name: "featuredimage", widget: image}
   #     - {label: "Body", name: "body", widget: "markdown"}
-  #     - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
     label: "Pages"
@@ -117,3 +113,52 @@ collections:
               {label: Easy4, name: easy4, widget: image},
               {label: Easy5, name: easy5, widget: image}
             ]
+      - file: "src/pages/rozmytnennia-eg.md"
+        label: "Розмитнення вiдправлень"
+        name: "rozmytnennia-eg"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/rozmytnennia-np.md"
+        label: "Розмитнення вiдправлень Нова Пошта"
+        name: "rozmytnennia-np"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/poryadok-utylizatsii-tovariv.md"
+        label: "Порядок утилізації товарів"
+        name: "poryadok-utylizatsii-tovariv"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/poriadok-povernennia-tovariv.md"
+        label: "Порядок повернення товарів"
+        name: "poriadok-povernennia-tovariv"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/zaboroneni-tovary.md"
+        label: "Заборонені до пересилання товари"
+        name: "zaboroneni-tovary"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/obrobka-dannih.md"
+        label: "Політика конфіденційності"
+        name: "obrobka-dannih"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/kliyentam.md"
+        label: "Публічний договір"
+        name: "kliyentam"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}

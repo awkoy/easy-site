@@ -9,8 +9,8 @@ const HowSection = ({how}) => {
             <div className="container">
                 <h2 className="title">{how.title}</h2>
                 <div className="landing-how__tabs">
-                    <div onClick={() => setActiveTab(0)} className={`landing-how__tab ${activeTab === 0 ? 'is-active' : ''}`}>Замовлення доставки</div>
-                    <div onClick={() => setActiveTab(1)} className={`landing-how__tab ${activeTab === 1 ? 'is-active' : ''}`}>Покупка товару за мене</div>
+                    <div role="button" tabIndex={0} onClick={() => setActiveTab(0)} onKeyPress={() => setActiveTab(0)} className={`landing-how__tab ${activeTab === 0 ? 'is-active' : ''}`}>Замовлення доставки</div>
+                    <div role="button" tabIndex={0} onClick={() => setActiveTab(1)} onKeyPress={() => setActiveTab(1)} className={`landing-how__tab ${activeTab === 1 ? 'is-active' : ''}`}>Покупка товару за мене</div>
                 </div>
                 <div className="landing-how__download">
                     <DownloadApp dark>

@@ -11,7 +11,7 @@ const Footer = class extends React.Component {
         <div className="container">
           <div className="footer__top">
             <div className="footer__social">
-              <img src={mainlogo} className="footer__logo" />
+              <img src={mainlogo} alt="A main logo" className="footer__logo" />
               <SocialList />
               {/* <div className="footer__social-list">
                 <a href="/" className="footer__social-item">

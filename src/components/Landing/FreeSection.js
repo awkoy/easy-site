@@ -37,8 +37,8 @@ const FreeSection = ({free}) => {
                 >
                     {free.map(d => <SwiperSlide key={d.subtitle}><Slide {...d} /></SwiperSlide>)}
                 </Swiper>
-                <div className="easy-slider__prev" onClick={() => swiper.slidePrev()}><IconLeft /></div>
-                <div className="easy-slider__next" onClick={() => swiper.slideNext()}><IconRight /></div>
+                <div aria-label="Prev button" className="easy-slider__prev" role="button" onKeyPress={() => swiper.slidePrev()} tabIndex={0} onClick={() => swiper.slidePrev()}><IconLeft /></div>
+                <div aria-label="Next button" className="easy-slider__next" role="button" onKeyPress={() => swiper.slideNext()} tabIndex={0} onClick={() => swiper.slideNext()}><IconRight /></div>
             </div>
         </section>
     )

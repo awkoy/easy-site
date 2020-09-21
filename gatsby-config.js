@@ -1,12 +1,27 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://easyget.com.ua/`,
     title: 'EasyGet - доставка та викуп з США та Китаю',
     description:
       'EasyGet — інструмент для зручної доставки та покупки товарів з іноземних сайтів. Ви можете придбати товар самостійно або просто додати його фото чи назву в нашому додатку і через 7-14 днів отримати його у своєму відділенні Нової Пошти.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-advanced-sitemap',
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Easyget.com.ua`,
+        short_name: `EasyGet`,
+        start_url: `/`,
+        background_color: `#FFF`,
+        theme_color: `#FFF`,
+        display: `standalone`,
+        icon: `src/img/EasyGet_icon.png`,
+      },
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -60,12 +75,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
@@ -90,13 +99,13 @@ module.exports = {
         }, 
       }
     },
+    'gatsby-plugin-offline',
     {
-      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
-    }, // must be after other CSS plugins
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

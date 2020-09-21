@@ -43,8 +43,8 @@ const CheapestSection = ({ cheapest }) => {
                         </div>
                     </div>
                     <div className="landing-cheapest__active-zone">
-                        <div className="easy-slider__prev" onClick={() => changeSlide('prev')}><IconLeft /></div>
-                        <div className="easy-slider__next" onClick={() => changeSlide('next')}><IconRight /></div>
+                        <div className="easy-slider__prev" role="button" tabIndex={0} aria-label="Prev slide" onClick={() => changeSlide('prev')} onKeyPress={() => changeSlide('prev')}><IconLeft /></div>
+                        <div className="easy-slider__next" role="button" tabIndex={0} aria-label="Next slide" onClick={() => changeSlide('next')} onKeyPress={() => changeSlide('next')}><IconRight /></div>
                     </div>
                 </div>
                 <div className="landing-cheapest__info">

@@ -15,10 +15,14 @@ const Navbar = () => {
     >
       <div className="container">
         <div
-            className={`navbar-burger ${navBarActiveClass}`}
-            data-target="navMenu"
-            onClick={() => setNavBarActiveClass('is-active')}
-          >
+          className={`navbar-burger ${navBarActiveClass}`}
+          data-target="navMenu"
+          role="button"
+          tabIndex={0}
+          aria-label="navbar-button"
+          onClick={() => setNavBarActiveClass('is-active')}
+          onKeyPress={() => setNavBarActiveClass('is-active')}
+        >
           <span />
           <span />
           <span />
@@ -40,17 +44,20 @@ const Navbar = () => {
             Трекінг
           </Link> */}
 
-          <span className="navbar__menu__close" onClick={() => setNavBarActiveClass('')}><IconClose /></span>
+          <span className="navbar__menu__close" aria-label="Close" role="button" tabIndex={0} onClick={() => setNavBarActiveClass('')} onKeyPress={() => setNavBarActiveClass('')}><IconClose /></span>
         </div>
-        <a onClick={() => firebaseLog('copy_phone_number')} href="tel:0800217980" className="navbar__phone">0 800 21 7980</a>
+        <a role="button" tabIndex={0} onClick={() => firebaseLog('copy_phone_number')} onKeyPress={() => firebaseLog('copy_phone_number')} href="tel:0800217980" className="navbar__phone">0 800 21 7980</a>
         <div className="navbar__social"><SocialList /></div>
         <a
-            className="easy-btn"
-            href="https://app.easyget.com.ua/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => firebaseLog('try_easyget')} 
-          >
+          className="easy-btn"
+          href="https://app.easyget.com.ua/"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="button"
+          tabIndex={0}
+          onClick={() => firebaseLog('try_easyget')}
+          onKeyPress={() => firebaseLog('try_easyget')}
+        >
           Спробувати
         </a>
       </div>
