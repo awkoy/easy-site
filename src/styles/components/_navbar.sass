@@ -14,8 +14,17 @@
         display: flex
         align-items: center
         justify-content: flex-end
+        position: relative
         +mobile
             justify-content: space-between
+    &-back
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        margin: auto
+        +mobile
+            display: none
     &__social
         position: fixed
         bottom: 140px

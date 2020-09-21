@@ -27,7 +27,7 @@ const InfoPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout isSecond>
       <InfoPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

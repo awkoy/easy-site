@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 // import { Link } from 'gatsby'
-import { IconClose } from './Common/icons';
+import { IconClose, IconLeft } from './Common/icons';
 import SocialList from './Common/SocialList';
 import { firebaseLog } from '../utils/analytics';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
-const AnchorNavLink = ({path, name, handleClick}) => (
+const AnchorNavLink = ({ path, name, handleClick }) => (
   <div onClick={handleClick} onKeyPress={handleClick} aria-label="Link" role="button" tabIndex={0}>
     <AnchorLink className="navbar__link" to={path}>
       {name}
@@ -25,8 +25,9 @@ const Anchors = [{
   path: '/#why',
   name: 'Чому ми?'
 }]
-const Navbar = () => {
+const Navbar = ({ isSecond }) => {
   const [navBarActiveClass, setNavBarActiveClass] = useState('');
+  const goBack = () => typeof window.history !== 'undefined' && window.history.go(-1);
 
   return (
     <nav
@@ -35,6 +36,7 @@ const Navbar = () => {
       aria-label="main-navigation"
     >
       <div className="container">
+        {isSecond && <button onClick={goBack} className="easy-btn easy-btn--simple navbar-back"><IconLeft /> Вернутся</button>}
         <div
           className={`navbar-burger ${navBarActiveClass}`}
           data-target="navMenu"
@@ -65,7 +67,7 @@ const Navbar = () => {
             Трекінг
           </Link> */}
 
-          {Anchors.map(({path, name}) => <AnchorNavLink key={path} handleClick={() => setNavBarActiveClass('')} path={path} name={name} />)} 
+          {Anchors.map(({ path, name }) => <AnchorNavLink key={path} handleClick={() => setNavBarActiveClass('')} path={path} name={name} />)}
 
           <span className="navbar__menu__close" aria-label="Close" role="button" tabIndex={0} onClick={() => setNavBarActiveClass('')} onKeyPress={() => setNavBarActiveClass('')}><IconClose /></span>
         </div>

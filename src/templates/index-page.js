@@ -25,7 +25,6 @@ export const IndexPageTemplate = ({
   cheapest,
   landing_images
 }) => {
-  console.log('data', shops)
   return (
     <>
       <EeasySection easy={easy} landing_images={landing_images} />

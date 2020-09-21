@@ -18,18 +18,24 @@ section
 .easy-btn
     background: $black
     border-radius: 72px
-    text-align: center
     font-size: $btn-fz
     min-width: 160px;
     height: 52px
     line-height: 52px
     text-decoration: none
     border: none
-    display: block
+    display: flex
+    align-items: center
+    justify-content: center
     color: $white
+    fill: $white
+    stroke: $white
     transition: background .3s
     padding-left: 30px
     padding-right: 30px
+    svg
+        display: block
+        margin-right: 10px
     +mobile
         height: 36px
         line-height: 36px
@@ -43,6 +49,8 @@ section
         background: $yellow
         &:hover
             background: $black
+    &--simple
+        background: $l-gray
 .easy-slider
     &__prev,
     &__next
@@ -139,3 +147,14 @@ h2
 
 .swiper-container-fade .swiper-slide
     background: $white
+
+.not-found
+    background: $white
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        min-height: 70vh
+    &__title
+        margin-bottom: 50px
