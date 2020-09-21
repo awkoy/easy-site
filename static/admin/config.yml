@@ -124,9 +124,9 @@ collections:
         label: "Розмитнення вiдправлень Нова Пошта"
         name: "rozmytnennia-np"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
       - file: "src/pages/poryadok-utylizatsii-tovariv.md"
         label: "Порядок утилізації товарів"
         name: "poryadok-utylizatsii-tovariv"
