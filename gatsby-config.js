@@ -76,6 +76,17 @@ module.exports = {
     },
     'gatsby-plugin-smoothscroll',
     {
+      resolve: `gatsby-plugin-yandex-metrika`,
+      options: {
+        trackingId: 67430974,
+        webvisor: true,
+        trackHash: true,
+        afterBody: true,
+        defer: false,
+        useCDN: true,
+      },
+    },
+    {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
