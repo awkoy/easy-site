@@ -1,4 +1,4 @@
-// import firebase from "gatsby-plugin-firebase"
+import firebase from "gatsby-plugin-firebase"
 
-const sendFirebase = () => {};
+const sendFirebase = (typeof window !== 'undefined' && !window.NetlifyCmsApp) ? firebase.analytics() : {};
 export const firebaseLog = (name, params) => sendFirebase.logEvent(name, params);

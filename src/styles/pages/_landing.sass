@@ -178,10 +178,9 @@
         &:hover
             border: 1px solid $yellow
 .landing-free
-    padding-bottom: 180px
+    padding-bottom: 60px
     +mobile
         padding-top: 130px
-        padding-bottom: 50px
         .easy-slider__prev,
         .easy-slider__next
             top: auto
@@ -235,6 +234,9 @@
             margin-bottom: 14px
 .landing-how
     background: $white
+    padding-top: 120px
+    +mobile
+        padding-top: 60px
     .title
         margin-bottom: 40px
     &__tabs
@@ -320,7 +322,7 @@
             margin-bottom: 62px
     &__container
         position: relative
-        min-height: 400px
+        min-height: 300px
         +mobile
             min-height: 1200px
     &__content
@@ -404,16 +406,17 @@
 
 .landing-price
     padding-bottom: 100px
+    padding-top: 100px
     &__plane-start
         position: absolute
         left: 0
-        top: 40px  
+        top: 140px  
         +mobile
             display: none
     &__plane-end
         position: absolute
         right: 100px
-        top: 60px
+        top: 160px
         +mobile
             display: none
     .title
@@ -557,7 +560,7 @@
             border-radius: 10px
 
 .landing-cheapest
-    padding-top: 100px
+    padding-top: 130px
     padding-bottom: 200px
     +mobile
         padding-top: 40px
@@ -675,7 +678,7 @@
         left: 0
         right: 0
         opacity: 0
-        visibility: 
+        visibility: hidden
         transition: .4s
         &.is-active
             opacity: 1

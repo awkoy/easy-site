@@ -1,33 +1,31 @@
 import React, { useState } from 'react'
-// import { Link } from 'gatsby'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import { IconClose, IconLeft } from './Common/icons';
 import SocialList from './Common/SocialList';
 import { firebaseLog } from '../utils/analytics';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { Link } from 'gatsby';
+
 
 const AnchorNavLink = ({ path, name, handleClick }) => (
-  <div onClick={handleClick} onKeyPress={handleClick} aria-label="Link" role="button" tabIndex={0}>
-    <AnchorLink className="navbar__link" to={path}>
-      {name}
-    </AnchorLink>
-  </div>
+  <button onClick={() => { scrollTo(path); handleClick(); }} className="navbar__link">
+    {name}
+  </button>
 )
 
 const Anchors = [{
-  path: '/#how',
+  path: '#how',
   name: 'Як це працює?'
 },
 {
-  path: '/#price',
+  path: '#price',
   name: 'Скільки це коштує?'
 },
 {
-  path: '/#why',
+  path: '#why',
   name: 'Чому ми?'
 }]
 const Navbar = ({ isSecond }) => {
   const [navBarActiveClass, setNavBarActiveClass] = useState('');
-  const goBack = () => typeof window.history !== 'undefined' && window.history.go(-1);
 
   return (
     <nav
@@ -36,7 +34,7 @@ const Navbar = ({ isSecond }) => {
       aria-label="main-navigation"
     >
       <div className="container">
-        {isSecond && <button onClick={goBack} className="easy-btn easy-btn--simple navbar-back"><IconLeft /> Вернутся</button>}
+        {isSecond && <Link to={"/"} className="easy-btn easy-btn--simple navbar-back"><IconLeft /> Вернутся</Link>}
         <div
           className={`navbar-burger ${navBarActiveClass}`}
           data-target="navMenu"
