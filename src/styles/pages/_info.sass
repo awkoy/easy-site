@@ -12,4 +12,47 @@
     &__content
         color: $black
         font-size: 18px
-        line-height: 24px
+        line-height: 26px
+        a
+            color: $yellow
+            transition: .3s
+            &:hover
+                text-decoration: none
+        h4
+            font-size: 24px
+            line-height: 30px
+            font-weight: bold
+            color: $black
+            margin-bottom: 16px
+            margin-top: 16px
+            +mobile
+                font-size: 20px
+                line-height: 26px
+
+        p
+            margin-bottom: 16px
+            margin-top: 16px
+            &:last-child
+                margin-bottom: 0
+
+        ul
+            margin-top: 16px
+            margin-bottom: 16px
+            &:last-child
+                margin-bottom: 0
+            li
+                position: relative
+                padding-left: 20px
+                margin-bottom: 10px
+                &:last-child
+                    margin-bottom: 0
+                &:after
+                    width: 7px
+                    height: 7px
+                    background: $yellow
+                    position: absolute
+                    left: 0
+                    top: 9px
+                    content: ''
+                    display: block
+                    border-radius: 50%

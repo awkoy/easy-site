@@ -29,9 +29,9 @@ const Footer = class extends React.Component {
               © 2020 EASYGET
             </div>
             <div className="footer__policy-list">
-              {/* <Link to="/obrobka-dannih">Політика конфіденційності</Link>
+              <Link to="/obrobka-dannih">Політика конфіденційності</Link>
               <Link to="/kliyentam">Публічний договір</Link>
-              <Link to="/zaboroneni-tovary">Заборонено пересилати</Link> */}
+              <Link to="/zaboroneni-tovary">Заборонено пересилати</Link>
               <Link to="/poriadok-povernennia-tovariv">Порядок повернення товарів</Link>
               <Link to="/poryadok-utylizatsii-tovariv">Порядок утилізації товарів</Link>
             </div>
