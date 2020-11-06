@@ -34,7 +34,7 @@ const Navbar = ({ isSecond }) => {
       aria-label="main-navigation"
     >
       <div className="container">
-        {isSecond && <Link to={"/"} className="easy-btn easy-btn--simple navbar-back"><IconLeft /> Вернутся</Link>}
+        {isSecond && <Link to={"/"} className="easy-btn easy-btn--simple navbar-back"><IconLeft />Повернутися</Link>}
         <div
           className={`navbar-burger ${navBarActiveClass}`}
           data-target="navMenu"
@@ -65,7 +65,12 @@ const Navbar = ({ isSecond }) => {
             Трекінг
           </Link> */}
 
-          {Anchors.map(({ path, name }) => <AnchorNavLink key={path} handleClick={() => setNavBarActiveClass('')} path={path} name={name} />)}
+          {isSecond ? 
+            <Link to={"/"} className="navbar__link">На головну</Link> : 
+            Anchors.map(({ path, name }) => 
+              <AnchorNavLink key={path} handleClick={() => setNavBarActiveClass('')} path={path} name={name} />
+            )
+          }
 
           <span className="navbar__menu__close" aria-label="Close" role="button" tabIndex={0} onClick={() => setNavBarActiveClass('')} onKeyPress={() => setNavBarActiveClass('')}><IconClose /></span>
         </div>
