@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../img/main-logo.svg'
 import EasyImage from '../Common/EasyImg'
+import { Link } from 'gatsby'
 
 const EeasySection = ({
     easy,
@@ -15,7 +16,7 @@ const EeasySection = ({
                     {easy.title_top} <span>{easy.title_bottom}</span>
                 </h1>
                 <div className="landing-easy__subtitle text">{easy.subtitle}</div>
-
+                <Link to="/black-friday" className="landing-easy__more">Подробнее</Link>
                 {bgImages.map((img, i) => (
                     <div key={i} className={`landing-easy__img landing-easy__img${i + 1}`}>
                         <EasyImage image={img} />

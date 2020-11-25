@@ -45,10 +45,11 @@ export default InfoPage
 
 export const infoPageQuery = graphql`
   query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: { eq: $id }, frontmatter: { templateKey: { eq: "info-page" } }) {
       html
       frontmatter {
         title
+        
       }
     }
   }

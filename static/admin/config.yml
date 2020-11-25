@@ -118,6 +118,7 @@ collections:
         name: "rozmytnennia-eg"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/rozmytnennia-np.md"
@@ -125,6 +126,7 @@ collections:
         name: "rozmytnennia-np"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
       - file: "src/pages/poryadok-utylizatsii-tovariv.md"
@@ -132,6 +134,7 @@ collections:
         name: "poryadok-utylizatsii-tovariv"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/poriadok-povernennia-tovariv.md"
@@ -139,6 +142,7 @@ collections:
         name: "poriadok-povernennia-tovariv"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/zaboroneni-tovary.md"
@@ -146,6 +150,7 @@ collections:
         name: "zaboroneni-tovary"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/obrobka-dannih.md"
@@ -153,6 +158,7 @@ collections:
         name: "obrobka-dannih"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/kliyentam.md"
@@ -160,6 +166,7 @@ collections:
         name: "kliyentam"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/mytnyi-zbir.md"
@@ -167,5 +174,14 @@ collections:
         name: "mytnyi-zbir"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/black-friday.md"
+        label: "Чорна пятниця"
+        name: "black-friday"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+          - {label: "Preview", name: "preview", widget: "image", required: false}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
