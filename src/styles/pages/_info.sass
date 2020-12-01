@@ -7,8 +7,10 @@
     .container
         max-width: 660px
         min-height: 50vh
+    &__preview
+        margin-bottom: 40px
     &__title
-        margin-bottom: 60px
+        margin-bottom: 40px
         font-size: 42px
         line-height: 50px
         text-align: left
@@ -33,6 +35,14 @@
             +mobile
                 font-size: 20px
                 line-height: 26px
+        
+        h5
+            font-size: 20px
+            line-height: 24px
+            font-weight: bold
+            color: $black
+            margin-bottom: 8px
+            margin-top: 8px
 
         p
             margin-bottom: 16px
@@ -59,3 +69,13 @@
                     content: ''
                     display: block
                     border-radius: 50%
+        ol
+            margin-top: 16px
+            margin-bottom: 16px
+            list-style-type: decimal
+            &:last-child
+                margin-bottom: 0
+            li
+                position: relative
+                margin-left: 20px
+                margin-bottom: 10px

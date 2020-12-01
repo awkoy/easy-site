@@ -17,12 +17,12 @@
             max-width: 100px
             margin-bottom: 16px
     &__subtitle
-        max-width: 456px
+        max-width: 506px
         margin-top: 34px
         text-align: center
         +mobile
             margin-top: 20px
-            max-width: 355px
+            max-width: 405px
     &__more
         border: 1px solid $l-gray
         box-sizing: border-box
@@ -56,6 +56,36 @@
         height: 90px
         right: 800px
         bottom: 480px
+        &:after
+            width: 200px
+            height: 200px
+            position: absolute
+            z-index: -1
+            border-radius: 50%
+            content: ''
+            display: block
+            background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 120 120' version='1.1' xmlns='http://www.w3.org/2000/svg'><circle cx='60' cy='60' r='47' stroke='%23EFB443' stroke-width='0.8' stroke-dasharray='0 4' stroke-linecap='square' fill='transparent'/></svg>");
+            opacity: 0.7
+            background-size: 100%
+            top: -15px
+            left: -30px
+            +mobile
+                display: none
+        &:before
+            width: 52px
+            height: 52px
+            display: block
+            content: ''
+            position: absolute
+            left: 20px
+            top: 100px
+            background: #F79358
+            opacity: 0.5
+            filter: blur(14px)
+            border-radius: 50%
+            z-index: -1
+            +mobile
+                display: none
         +mobile
             right: 30px
             left: auto
@@ -70,11 +100,42 @@
             width: 90px
             right: 0
             top: 340px
+            display: none
     &__img3
         width: 200px
         top: 500px
         right: 800px
         height: 320px
+        &:after
+            width: 400px
+            height: 400px
+            position: absolute
+            z-index: -1
+            border-radius: 50%
+            content: ''
+            display: block
+            background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 120 120' version='1.1' xmlns='http://www.w3.org/2000/svg'><circle cx='60' cy='60' r='47' stroke='%23EFB443' stroke-width='0.4' stroke-dasharray='0 2' stroke-linecap='square' fill='transparent'/></svg>");
+            background-size: 100%
+            opacity: 0.7
+            bottom: -40px
+            right: -40px
+            +mobile
+                display: none
+        &:before
+            width: 90px
+            height: 62px
+            display: block
+            content: ''
+            position: absolute
+            left: 40px
+            top: 180px
+            background: #F79358
+            opacity: 0.5
+            filter: blur(30px)
+            border-radius: 50%
+            z-index: -1
+            +mobile
+                display: none
         +mobile
             display: none
     &__img4
@@ -82,6 +143,36 @@
         left: 800px
         top: 400px
         height: 300px
+        &:after
+            width: 240px
+            height: 240px
+            position: absolute
+            z-index: -1
+            border-radius: 50%
+            content: ''
+            display: block
+            background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 120 120' version='1.1' xmlns='http://www.w3.org/2000/svg'><circle cx='60' cy='60' r='47' stroke='%23EFB443' stroke-width='0.5' stroke-dasharray='0 3' stroke-linecap='square' fill='transparent'/></svg>");
+            background-size: 100%
+            opacity: 0.7
+            bottom: 30px
+            right: 220px
+            +mobile
+                display: none
+        &:before
+            width: 100px
+            height: 100px
+            display: block
+            content: ''
+            position: absolute
+            right: 280px
+            bottom: 80px
+            background: #F79358
+            opacity: 0.5
+            filter: blur(30px)
+            border-radius: 50%
+            z-index: -1
+            +mobile
+                display: none
         +mobile
             width: 500px
             bottom: auto
@@ -94,6 +185,36 @@
         left: 900px
         bottom: 150px
         height: 155px
+        &:after
+            width: 110px
+            height: 110px
+            position: absolute
+            z-index: -1
+            border-radius: 50%
+            content: ''
+            display: block
+            background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 120 120' version='1.1' xmlns='http://www.w3.org/2000/svg'><circle cx='60' cy='60' r='47' stroke='%23EFB443' stroke-width='1' stroke-dasharray='0 5' stroke-linecap='square' fill='transparent'/></svg>");
+            background-size: 100%
+            opacity: 0.7
+            bottom: 10px
+            right: 6px
+            +mobile
+                display: none
+        &:before
+            width: 72px
+            height: 24px
+            display: block
+            content: ''
+            position: absolute
+            left: 50px
+            top: 130px
+            background: #F79358
+            opacity: 0.5
+            filter: blur(14px)
+            border-radius: 50%
+            z-index: -1
+            +mobile
+                display: none
         +mobile
             width: 95px
             left: 30px

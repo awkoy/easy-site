@@ -3,13 +3,17 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import EasyImage from '../components/Common/EasyImg'
 
-export const InfoPageTemplate = ({ title, content, contentComponent }) => {
+export const InfoPageTemplate = ({ title, content, preview, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className="info">
       <div className="container">
+        {preview ? <div className="info__preview">
+          <EasyImage image={preview} />
+        </div> : null}
         <h2 className="info__title">{title}</h2>
         <PageContent className="info__content" content={content} />
       </div>
@@ -31,6 +35,7 @@ const InfoPage = ({ data }) => {
       <InfoPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        preview={post.frontmatter.preview}
         content={post.html}
       />
     </Layout>
@@ -49,7 +54,13 @@ export const infoPageQuery = graphql`
       html
       frontmatter {
         title
-        
+        preview {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
       }
     }
   }

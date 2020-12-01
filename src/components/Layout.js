@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Support from '../components/Support'
 import '../styles/main.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
@@ -51,6 +52,7 @@ const TemplateWrapper = ({ isSecond, children }) => {
       <Navbar isSecond={isSecond} />
       <div>{children}</div>
       <Footer />
+      <Support />
     </div>
   )
 }
