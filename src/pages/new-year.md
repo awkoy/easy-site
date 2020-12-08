@@ -8,6 +8,8 @@ subtitle: "New year title, New year title, New year title, New year title, New
 textlist:
   - title: "New year title, "
     text: "New year title, New year title, "
+  - title: "Приветики "
+    text: "Здарова "
 productlist:
   - name: "New year title, "
     price: "New year title, "
