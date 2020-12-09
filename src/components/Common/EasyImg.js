@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
-const EasyImage = ({ image }) => {
+const EasyImage = ({ image = {} }) => {
   const { alt = '', childImageSharp, publicURL } = image
 
   if (!!childImageSharp) {

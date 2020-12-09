@@ -9,7 +9,6 @@ import ProductList from '../components/ProductList'
 
 export const CustomPageTemplate = ({ title, subtitle, productlist, textlist, content, preview, contentComponent }) => {
   const PageContent = contentComponent || Content
-  console.log('custom page data', title, subtitle, productlist, textlist, content, preview)
   return (
     <section className="custom-page">
       {preview ?
@@ -34,8 +33,6 @@ export const CustomPageTemplate = ({ title, subtitle, productlist, textlist, con
 
 const CustomPage = ({ data }) => {
   const { markdownRemark: post } = data
-
-  console.log('post', post)
 
   return (
     <Layout isSecond>
