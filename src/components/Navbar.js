@@ -66,7 +66,7 @@ const Navbar = ({ isSecond }) => {
           </Link> */}
 
           {isSecond ? 
-            <Link to={"/"} className="navbar__link">На головну</Link> : 
+            <Link to={"/"} className="navbar__link navbar__link--second">На головну</Link> : 
             Anchors.map(({ path, name }) => 
               <AnchorNavLink key={path} handleClick={() => setNavBarActiveClass('')} path={path} name={name} />
             )

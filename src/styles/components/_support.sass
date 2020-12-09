@@ -4,6 +4,10 @@
     bottom: 40px
     cursor: pointer
     z-index: 40
+    +mobile
+        right: 20px
+        bottom: 20px
+        cursor: default
     &.active
         .support__trigger-close
             opacity: 1
@@ -12,6 +16,7 @@
         .support__item
             transform: translateY(0)
             opacity: 1
+            visibility: visible
             &:hover
                 transform: translateY(0) scale(1.1)
     +hover
@@ -23,6 +28,7 @@
             .support__item
                 transform: translateY(0)
                 opacity: 1
+                visibility: visible
                 &:hover
                     transform: translateY(0) scale(1.1)
     &__trigger
@@ -65,6 +71,7 @@
         transition: .3s ease-out
         position: relative
         opacity: 0
+        visibility: hidden
         img
             display: block
             position: absolute

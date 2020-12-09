@@ -10,8 +10,7 @@ import vb from '../img/support-vb.svg'
 const Support = () => {
     const [active, setActive] = useState(false);
     return (
-        <div className={`support ${active ? 'active' : ''}`} onClick={() => setActive(!active)} onKeyPress={() => setActive(!active)} role="button"
-        tabIndex={0}>
+        <div className={`support ${active ? 'active' : ''}`}>
             <div className="support__trigger">
                 <a href="https://www.facebook.com/EasyGet.Express.Delivery" target="_blank" rel="noopener noreferrer" className="support__item support__item--fb">
                     <img src={fb} alt="Facebook Icon" />
@@ -25,7 +24,8 @@ const Support = () => {
                 <a href="https://t.me/MyEasyGet_bot?fbclid=IwAR0yY86DuwDHTkrCmTrIcOGYWHn57HaeE7yIamGtcnNJxJZulTHwSZx6KBE" target="_blank" rel="noopener noreferrer" className="support__item support__item--tg">
                     <img src={tg} alt="Telegram Icon" />
                 </a>
-                <div className="support__trigger-icon">
+                <div className="support__trigger-icon" onClick={() => setActive(!active)} onKeyPress={() => setActive(!active)} role="button"
+        tabIndex={0}>
                     <img className="support__trigger-chat" src={chat} alt="Chat Icon" />
                     <img className="support__trigger-close" src={close} alt="Close Icon" />
                 </div>
