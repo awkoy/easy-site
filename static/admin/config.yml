@@ -14,15 +14,30 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - name: "about-pages"
-  #   label: "About Pages"
-  #   folder: "src/pages/about"
-  #   create: true
-  #   slug: "{{slug}}"
-  #   fields:
-  #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-  #     - {label: "Title", name: "title", widget: "string"}
-  #     - {label: "Body", name: "body", widget: "markdown"}
+  - name: "custom-pages"
+    label: "Custom Pages"
+    folder: "src/pages"
+    filter: {field: "templateKey", value: "custom-page"}
+    create: true
+    slug: "{{slug}}"
+    identifier_field: pather
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
+      - {label: "Page path", name: "pather", widget: "string"}
+      - {label: "Preview", name: "preview", widget: "image", required: false}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "List", name: "textlist", widget: "list", fields: [
+          {label: "Title", name: "title", widget: "string"},
+          {label: "Text", name: "text", widget: "text"}
+        ], required: false}
+      - {label: "Products", name: "productlist", widget: "list", fields: [
+          {label: "Name", name: "name", widget: "string"},
+          {label: "Price", name: "price", widget: "string"},
+          {label: "Link", name: "link", widget: "string"},
+          {label: "Image", name: "image", widget: "image"},
+        ], required: false}
 
   - name: "pages"
     label: "Pages"

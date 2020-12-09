@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+pather: allo
 preview: /img/group-1183-1.jpg
 title: Custom page title
 subtitle: Custom page subtitle, Custom page subtitle, Custom page subtitle,
