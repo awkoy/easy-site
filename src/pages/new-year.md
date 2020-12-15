@@ -1,23 +1,17 @@
 ---
 templateKey: custom-page
-pather: new-year
-preview: /img/group-1183-1.jpg
-title: New year title
-subtitle: "New year title, New year title, New year title, New year title, New
-  year title, New year title, New year title, New year title, New year title, "
-textlist:
-  - title: "New year title, "
-    text: "New year title, New year title, "
-  - title: "Приветики "
-    text: "Здарова "
-productlist:
-  - name: Крутые часики
-    price: 999 $
-    link: www.google.com
-    image: /img/clock.png
-  - name: Вапорайзер
-    price: 11 грн
-    link: www.google.com
-    image: /img/vaporizer.png
+pather: Виграйте телевізор Xiaomi Smart TV
+preview: /img/cover-2021-2-.png
+title: Телевізор під ялинку
+subtitle: "\n"
+textlist: []
+productlist: []
+calltoaction:
+  link: https://app.easyget.com.ua/
+  text: Взяти участь
 ---
-New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title, New year title,
+Оплатіть доставку або викуп з 15 по 30 грудня та візьміть участь в розіграші телевізора Xiaomi Smart TV.
+
+В розіграші бере участь кожне ваше замовлення. Чим більше ви зробите викупів або доставок, тим вищий ваш шанс отримати приз. 
+
+Переможця визначимо 31 грудня за допомогою сервісу Random.org та оголосимо його на наших сторінках в [Instagram](https://www.instagram.com/easyget.express/) та [Facebook](https://www.facebook.com/EasyGet.Express.Delivery).
