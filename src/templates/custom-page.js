@@ -7,7 +7,7 @@ import EasyImage from '../components/Common/EasyImg'
 import TextList from '../components/TextList'
 import ProductList from '../components/ProductList'
 
-export const CustomPageTemplate = ({ title, subtitle, productlist, textlist, content, preview, contentComponent }) => {
+export const CustomPageTemplate = ({ title, subtitle, productlist, textlist, calltoaction = {}, content, preview, contentComponent }) => {
   const PageContent = contentComponent || Content
   return (
     <section className="custom-page">
@@ -27,6 +27,11 @@ export const CustomPageTemplate = ({ title, subtitle, productlist, textlist, con
       {productlist ? <div className="container">
         <ProductList productlist={productlist} />
       </div> : null}
+      {calltoaction ? 
+        <div className="easy-btn__center">
+          <a href={calltoaction.link} target="_blank" rel="noopener noreferrer" className="easy-btn">{calltoaction.text}</a>
+        </div>
+       : null}
     </section>
   )
 }
@@ -43,6 +48,7 @@ const CustomPage = ({ data }) => {
         textlist={post.frontmatter.textlist}
         productlist={post.frontmatter.productlist}
         preview={post.frontmatter.preview}
+        calltoaction={post.frontmatter.calltoaction}
         content={post.html}
       />
     </Layout>
@@ -62,6 +68,10 @@ export const customPageQuery = graphql`
       frontmatter {
         title
         subtitle
+        calltoaction {
+          text
+          link
+        }
         textlist {
             title
             text

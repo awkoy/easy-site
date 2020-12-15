@@ -13,6 +13,7 @@ const CustomPagePreview = ({ entry, widgetFor }) => {
                 textlist={data.textlist}
                 productlist={data.productlist}
                 preview={data.preview}
+                calltoaction={data.calltoaction}
                 content={widgetFor('body')}
             />
         )
