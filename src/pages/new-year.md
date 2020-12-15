@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-pather: Виграйте телевізор Xiaomi Smart TV
+pather: new-year-2020
 preview: /img/cover-2021-2-.png
 title: Телевізор під ялинку
 subtitle: "\n"
