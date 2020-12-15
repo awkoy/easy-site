@@ -1,10 +1,10 @@
 ---
 templateKey: index-page
 easy:
-  title_top: Доставка та викуп
-  title_bottom: з США та Китаю
-  subtitle: Завантаж в додаток фото або назву товару, а ми придбаємо його та
-    доставимо до відділення Нової Пошти
+  title_top: Виграйте телевізор
+  title_bottom: Xiaomi Smart TV
+  subtitle: Оплатіть викуп чи доставку з 15 по 30 грудня та виграйте телевізор під
+    вашу ялинку
 about:
   image: /img/about-phone.png
   text: EasyGet — інструмент для зручної доставки та покупки товарів з іноземних
@@ -132,7 +132,7 @@ feedbacks:
 landing_images:
   easy1: /img/easy1.png
   easy2: /img/easy2.png
-  easy3: /img/easy3.png
+  easy3: /img/televizor-xiaomi-mi-tv-4s-2-removebg-preview-1.png
   easy4: /img/easy4.png
   easy5: /img/easy5.png
 ---
