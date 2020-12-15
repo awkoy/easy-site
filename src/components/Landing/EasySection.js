@@ -16,7 +16,7 @@ const EeasySection = ({
                     {easy.title_top} <span>{easy.title_bottom}</span>
                 </h1>
                 <div className="landing-easy__subtitle text">{easy.subtitle}</div>
-                <Link to="/black-friday" className="landing-easy__more">Детальніше</Link>
+                <Link to="/new-year" className="landing-easy__more">Детальніше</Link>
                 {bgImages.map((img, i) => (
                     <div key={i} className={`landing-easy__img landing-easy__img${i + 1}`}>
                         <EasyImage image={img} />
