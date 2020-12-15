@@ -1,8 +1,8 @@
 ---
 templateKey: custom-page
 pather: new-year-2020
-preview: /img/cover-2021-2-.png
-title: Телевізор під ялинку
+preview: /img/cover-2021-3-.png
+title: Виграйте телевізор під ялинку
 subtitle: "\n"
 textlist: []
 productlist: []
