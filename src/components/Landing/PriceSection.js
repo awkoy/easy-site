@@ -14,7 +14,7 @@ const PriceSection = () => {
         <div className="landing-price__items">
           <div className="landing-price__item">
             <div className="landing-price__item-value">
-              3.85$
+              3.95$
             </div>
             <div className="landing-price__item-label">
               США / 0,5кг
@@ -32,7 +32,7 @@ const PriceSection = () => {
           </div>
           <div className="landing-price__item">
             <div className="landing-price__item-value">
-              5.85$
+              5.95$
             </div>
             <div className="landing-price__item-label">
               Китай / 0,5кг

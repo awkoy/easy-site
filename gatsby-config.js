@@ -111,6 +111,12 @@ module.exports = {
         }, 
       }
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "244758696888481",
+      },
+    },
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-netlify-cms',

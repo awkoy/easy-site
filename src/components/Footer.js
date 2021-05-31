@@ -34,7 +34,7 @@ const Footer = class extends React.Component {
               <Link to="/zaboroneni-tovary">Заборонено пересилати</Link>
               <Link to="/poriadok-povernennia-tovariv">Повернення товарів</Link>
               <Link to="/poryadok-utylizatsii-tovariv">Утилізація товарів</Link>
-              <Link to="/mytnyi-zbir">Митні платежі</Link>
+              <Link to="/mytnyi-zbir">Митниця</Link>
             </div>
           </div>
         </div>
