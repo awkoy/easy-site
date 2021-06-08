@@ -93,8 +93,10 @@ service:
   servicelist:
     - titlee: Cтраховка посилки
       image: /img/enshurance.png
+      title: Cтраховка посилки
     - titlee: Додаткове фото
       image: /img/enshurance.png
+      title: Додаткове фото
 why:
   title: EasyGet
   text: Купувати турецький одяг, текстиль та інші вироби в інтернет-магазинах в
