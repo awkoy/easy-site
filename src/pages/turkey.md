@@ -103,6 +103,12 @@ why:
     роздріб як ніколи вигідно разом з EasyGet. Обирайте на різних сайтах та
     об’єднуйте до 8 замовлень в 1 посилку та економте на доставці
   price: Ціна доставки з Туреччини  в Україну за 0,5 кг 3,95$
+feedbacks:
+  title: Відгуки клієнтів
+  list:
+    - feedback: /img/group-1010.png
+    - feedback: /img/group-1176.png
+    - feedback: /img/coment_3.png
 turkey_images:
   turkey1: /img/futbolka.png
   turkey2: /img/okulars.png
