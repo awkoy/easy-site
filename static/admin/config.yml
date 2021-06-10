@@ -224,6 +224,10 @@ collections:
               {label: Text, name: text, widget: text},
               {label: Price, name: price, widget: string}
             ]
+          - {label: FeedbackSection, name: feedbacks, widget: object, fields: [
+              {label: FeedbackTitle, name: title, widget: string},
+              {label: FeedbackList, name: list, widget: list, fields: [{label: Feedback, name: feedback, widget: image}]}
+            ]}
           - label: TurkeyImages
             name: turkey_images
             widget: object

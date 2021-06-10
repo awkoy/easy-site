@@ -13,14 +13,22 @@ import CheapestSection from '../components/Landing/CheapestSection'
 import EcommerceSection from '../components/Landing/EcommerceSection'
 // import CompareSection from '../components/Landing/CompareSection'
 import FeedbackSection from '../components/Landing/FeedbackSection'
+import Profit from '../components/Turkey/Profit'
+import HowItWorks from '../components/Turkey/HowItWorks'
 
 export const TurkeyPageTemplate = ({
     easy,
+    profit,
+    how,
+    feedbacks,
     turkey_images
 }) => {
+    console.log(profit);
     return (
-        <>
-            <EeasySection easy={easy} turkey_images={turkey_images} />
+        <div className="turkey-page">
+            <EeasySection easy={easy} turkey_images={turkey_images} btnLink="FDS" />
+            <Profit profit={profit} />
+            <HowItWorks how={how} />
             {/* <AboutSection about={about} />
       <FreeSection free={free} />
       <HowSection how={how} />
@@ -29,8 +37,8 @@ export const TurkeyPageTemplate = ({
       <CheapestSection cheapest={cheapest} />
       <EcommerceSection shops={shops} /> */}
             {/* <CompareSection /> */}
-            {/* <FeedbackSection feedbacks={feedbacks} /> */}
-        </>
+            <FeedbackSection feedbacks={feedbacks} />
+        </div>
     )
 }
 
@@ -41,6 +49,9 @@ const TurkeyPage = ({ data }) => {
             <TurkeyPageTemplate
                 easy={frontmatter.easy}
                 turkey_images={frontmatter.turkey_images}
+                profit={frontmatter.profit}
+                how={frontmatter.how}
+                feedbacks={frontmatter.feedbacks}
             />
         </Layout>
     )
@@ -161,6 +172,18 @@ export const pageQuery = graphql`
             text
             price
         }
+        feedbacks {
+            title
+            list {
+              feedback {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
+                }
+              }
+            }
+          }
         turkey_images {
           turkey1 {
             childImageSharp {

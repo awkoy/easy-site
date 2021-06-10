@@ -6,9 +6,10 @@ import { Link } from 'gatsby'
 const EeasySection = ({
     easy,
     landing_images = {},
-    turkey_images = {}
+    turkey_images = {},
+    btnLink = ''
 }) => {
-    const bgImages = [landing_images.easy1, landing_images.easy2,landing_images.easy3,landing_images.easy4,landing_images.easy5]
+    const bgImages = [landing_images.easy1, landing_images.easy2, landing_images.easy3, landing_images.easy4, landing_images.easy5]
     const turkeyImages = [turkey_images.turkey1, turkey_images.turkey2, turkey_images.turkey3, turkey_images.turkey4]
     return (
         <section className="landing-easy is-rounded-bottom">
@@ -18,6 +19,16 @@ const EeasySection = ({
                     {easy.title_top} <span>{easy.title_bottom}</span>
                 </h1>
                 <div className="landing-easy__subtitle text">{easy.subtitle}</div>
+                {!btnLink ? null : <a
+                    className="easy-btn"
+                    href={btnLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    role="button"
+                    tabIndex={0}
+                >
+                    Го шопитись
+                </a>}
                 {landing_images.easy1 && bgImages.map((img, i) => (
                     <div key={i} className={`landing-easy__img landing-easy__img${i + 1}`}>
                         <EasyImage image={img} />
