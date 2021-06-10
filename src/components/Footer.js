@@ -32,8 +32,8 @@ const Footer = class extends React.Component {
               <Link to="/obrobka-dannih">Політика конфіденційності</Link>
               <Link to="/kliyentam">Публічний договір</Link>
               <Link to="/zaboroneni-tovary">Заборонено пересилати</Link>
-              <Link to="/poriadok-povernennia-tovariv">Повернення товарів</Link>
-              <Link to="/poryadok-utylizatsii-tovariv">Утилізація товарів</Link>
+              <Link to="/poriadok-povernennia-tovariv">Компенсація та страхування</Link>
+              <Link to="/poryadok-utylizatsii-tovariv">Повернення та утилізація</Link>
               <Link to="/mytnyi-zbir">Митниця</Link>
             </div>
           </div>

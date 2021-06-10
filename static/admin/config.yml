@@ -132,6 +132,107 @@ collections:
               {label: Easy4, name: easy4, widget: image},
               {label: Easy5, name: easy5, widget: image}
             ]
+      - file: "src/pages/turkey.md"
+        label: "Turkey Page"
+        name: "turkey"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "turkey-page"}
+          - label: EasySection
+            name: easy
+            widget: object
+            fields: [
+              {label: TitleTop, name: title_top, widget: string},
+              {label: TitleBottom, name: title_bottom, widget: string},
+              {label: Subtitle, name: subtitle, widget: text},
+              {label: ButtonLink, name: link, widget: string}
+            ]
+          - label: ProfitSection
+            name: profit
+            widget: object
+            fields: [
+              {label: Title, name: title, widget: string},
+              {label: Things, name: things, widget: list, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Img, name: image, widget: image},
+              ]}
+            ]
+          - label: HowSection
+            name: how
+            widget: object
+            fields: [
+              {label: Title, name: title, widget: string},
+              {label: Order Steps, name: order_steps, widget: list, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]},
+              {label: Buy Steps, name: buy_steps, widget: list, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: text}
+              ]}
+            ]
+          - label: PopularSection
+            name: popular
+            widget: object
+            fields: [
+              {label: Title, name: title, widget: string},
+              {label: Subtitle, name: subtitle, widget: string},
+              {label: ShopsList, name: list, widget: list, fields: [{label: Logo, name: logo, widget: image}]}
+            ]
+          - label: ShopsSection
+            name: shops
+            widget: object
+            fields: [
+              {label: Title, name: title, widget: string},
+              {label: Shops, name: shopslist, widget: list, fields: [
+                {label: Name, name: name, widget: string},
+                {label: Logo, name: logo, widget: image},
+                {label: Desctription, name: description, widget: text},
+                {label: Link, name: link, widget: string},
+                {label: PriceList, name: prices, widget: list, fields: [{label: Type, name: type, widget: string}, {label: Prices, name: cost, widget: string}]}
+              ]}
+            ]
+          - label: AboutSection
+            name: about
+            widget: object
+            fields: [
+              {label: Image, name: image, widget: image},
+              {label: Title, name: title, widget: string},
+              {label: AboutList, name: list, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: string}]}
+            ]
+          - label: ServiceSection
+            name: service
+            widget: object
+            fields: [
+              {label: Delivery, name: delivery, widget: object, fields: [
+                {label: Title, name: title, widget: string}, 
+                {label: Text, name: text, widget: text}
+              ]},
+              {label: Buy, name: buy, widget: object, fields: [
+                {label: Title, name: title, widget: string}, 
+                {label: Text, name: text, widget: text}
+              ]},
+              {label: ServiceList, name: servicelist, widget: list, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Image, name: image, widget: image}
+              ]}
+            ]
+          - label: WhySection
+            name: why
+            widget: object
+            fields: [
+              {label: Title, name: title, widgeet: string},
+              {label: Text, name: text, widget: text},
+              {label: Price, name: price, widget: string}
+            ]
+          - label: TurkeyImages
+            name: turkey_images
+            widget: object
+            fields: [
+              {label: Turkey1, name: turkey1, widget: image},
+              {label: Turkey2, name: turkey2, widget: image},
+              {label: Turkey3, name: turkey3, widget: image},
+              {label: Turkey4, name: turkey4, widget: image}
+            ]
       - file: "src/pages/rozmytnennia-eg.md"
         label: "Розмитнення вiдправлень"
         name: "rozmytnennia-eg"
