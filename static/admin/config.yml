@@ -224,7 +224,7 @@ collections:
             widget: object
             fields: [
               {label: Title, name: title, widgeet: string},
-              {label: Subtitle, name: text, widget: markdown},
+              {label: Subtitle, name: subtitle, widget: markdown},
               {label: List, name: list, widget: list, fields: [
                 {label: Image, name: image, widget: image},
                 {label: Title, name: title, widget: string},

@@ -114,103 +114,103 @@ export const pageQuery = graphql`
           }
         }
         popular {
-            title
-            subtitle
-            list {
-              logo {
-                childImageSharp {
-                    fluid(maxWidth: 800) {
-                      ...GatsbyImageSharpFluid_withWebp_noBase64
-                    }
-                }
+          title
+          subtitle
+          list {
+            logo {
+              childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
               }
             }
+          }
         }
         shops {
           title
           shopslist {
-              name
-              logo {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid_withWebp_noBase64
-                  }
+            name
+            logo {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
-              description
-              link
-              prices {
-                  type
-                  cost
-              }
+            }
+            description
+            link
+            prices {
+              type
+              cost
+            }
           }
         }
         about {
-            image {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid_withWebp_noBase64
-                  }
-                }
+          image {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
-            title
-            list {
-                title
-                text
             }
-        }
-        service {
-            delivery {
-                title
-                text
-            }
-            buy {
-                title
-                text
-            }
-            servicelist {
-                title
-                image {
-                    childImageSharp {
-                        fluid(maxWidth: 800) {
-                          ...GatsbyImageSharpFluid_withWebp_noBase64
-                        }
-                      }
-                }
-            }
-        }
-        why {
-            title
-            subtitle
-            list {
-                image {
-                    childImageSharp {
-                        fluid(maxWidth: 800) {
-                          ...GatsbyImageSharpFluid_withWebp_noBase64
-                        }
-                      }
-                }
-                title
-                text
-            }
-        }
-        prices {
+          }
+          title
+          list {
             title
             text
-            price
+          }
         }
-        feedbacks {
+        service {
+          delivery {
             title
-            list {
-              feedback {
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid_withWebp_noBase64
-                  }
+            text
+          }
+          buy {
+            title
+            text
+          }
+          servicelist {
+            title
+            image {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
           }
+        }
+        why {
+          title
+          subtitle
+          list {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+            title
+            text
+          }
+        }
+        prices {
+          title
+          text
+          price
+        }
+        feedbacks {
+          title
+          list {
+            feedback {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+          }
+        }
         turkey_images {
           turkey1 {
             childImageSharp {
