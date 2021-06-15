@@ -55,6 +55,16 @@ popular:
     - logo: /img/logo1.png
     - logo: /img/logo2.png
     - logo: /img/logo23.png
+    - logo: /img/ebay.png
+    - logo: /img/amazon.png
+    - logo: /img/c-ali.svg
+    - logo: /img/6pm.png
+    - logo: /img/1688.png
+    - logo: /img/citrus.svg
+    - logo: /img/logo2.png
+    - logo: /img/unification-additional-service-easyget.png
+    - logo: /img/6pm.png
+    - logo: /img/1688.png
 shops:
   title: ми трошки розділили по категоріям, щоб вам було зручніше
   shopslist:
@@ -139,6 +149,7 @@ prices:
     роздріб як ніколи вигідно разом з EasyGet. Обирайте на різних сайтах та
     об’єднуйте до 8 замовлень в 1 посилку та економте на доставці
   price: Ціна доставки з Туреччини  в Україну за 0,5 кг 3,95$
+  image: /img/about-phone.png
 feedbacks:
   title: Відгуки клієнтів
   list:
