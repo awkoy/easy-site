@@ -6,7 +6,7 @@ const Prices = ({prices}) => {
         <section className="turkey-prices">
             <div className="container">
                 <div className="turkey-prices__content">
-                    <div className="turkey-prices__title title">{prices.title}</div>
+                    <h2 className="turkey-prices__title title">{prices.title}</h2>
                     <div className="turkey-prices__text text">{prices.text}</div>
                     <div className="turkey-prices__cost text">{prices.price}</div>
                     <DownloadApp />

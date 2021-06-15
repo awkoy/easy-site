@@ -1,9 +1,13 @@
 import React from 'react'
 import EasyImage from '../Common/EasyImg'
+import planeStart from '../../img/plane-start.svg'
+import planeEnd from '../../img/plane-end.svg'
 
 const Services = ({ service }) => {
     return (
         <section className="our-service">
+            <img src={planeStart} alt="" className="landing-price__plane-start"/>
+            <img src={planeEnd} alt="" className="landing-price__plane-end"/>
             <div className="container">
                 <h2 className="title our-service__title">{service.title}</h2>
                 <div className="our-service__about">

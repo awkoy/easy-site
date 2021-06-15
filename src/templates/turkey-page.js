@@ -33,7 +33,6 @@ export const TurkeyPageTemplate = ({
     feedbacks,
     turkey_images
 }) => {
-    console.log(profit);
     return (
         <div className="turkey-page">
             <EeasySection easy={easy} turkey_images={turkey_images} btnLink="FDS" />
@@ -160,13 +159,28 @@ export const pageQuery = graphql`
           }
         }
         service {
+          title
           delivery {
             title
             text
+            image {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
+                }
+              }
           }
           buy {
             title
             text
+            image {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
+                }
+              }
           }
           servicelist {
             title

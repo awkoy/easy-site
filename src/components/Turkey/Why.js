@@ -6,7 +6,10 @@ const Why = ({ why }) => {
         <section className="turkey-why">
             <div className="container">
                 <h2 className="title turkey-why__title">{why.title}</h2>
-                <div className="text turkey-why__subtitle">{why.subtitle}</div>
+                <div className="text turkey-why__subtitle">
+                    На <b>20% швидше</b> 🚀 доставляємо з-за кордону <br />
+На <b>30-50% 💸 вигідніше</b> ціна, ніж в українських магазинів
+                </div>
                 <div className="turkey-why__list">
                     {why.list.map(({ image, title, text }) => (
                         <div className="turkey-why__item">

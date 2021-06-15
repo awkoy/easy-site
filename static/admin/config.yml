@@ -185,6 +185,14 @@ collections:
               {label: Title, name: title, widget: string},
               {label: Shops, name: shopslist, widget: list, fields: [
                 {label: Name, name: name, widget: string},
+                {label: "Category", name: "category", widget: "select", options: [
+                  { label: "Одяг", value: "clothes" },
+                  { label: "Взуття", value: "shoes" },
+                  { label: "Текстиль", value: "textile" },
+                  { label: "Дитячий світ", value: "kids" },
+                  { label: "Для дому", value: "home" },
+                  { label: "Прикраси", value: "jewerly" }
+                ]},
                 {label: Logo, name: logo, widget: image},
                 {label: Desctription, name: description, widget: text},
                 {label: Link, name: link, widget: string},
@@ -237,7 +245,8 @@ collections:
             fields: [
               {label: Title, name: title, widgeet: string},
               {label: Text, name: text, widget: text},
-              {label: Price, name: price, widget: string}
+              {label: Price, name: price, widget: string},
+              {label: Image, name: image, widget: image}
             ]
           - {label: FeedbackSection, name: feedbacks, widget: object, fields: [
               {label: FeedbackTitle, name: title, widget: string},
