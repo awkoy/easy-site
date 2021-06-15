@@ -67,6 +67,7 @@ shops:
           cost: 525 - 700 ₴
         - type: Футболки
           cost: 100 - 350 ₴
+  shopslist: []
 about:
   title: Про EasyGet
   list:
@@ -84,20 +85,43 @@ service:
       цінами від виробників. Після отримання ми сфотографуємо вміст посилки, а
       далі надішлемо ваше замовлення на вказану вами адресу в Україну. Ось і
       все. EasyGet — це швидко та зручно!
+    image: /img/delivery-turkey.png
   buy:
     title: Easy Покупка
     text: Щоб шопитись з Туреччиною не обов'язково володіти турецькою мовою. Для
       вашої зручності у нас є послуга “Викуп товару" – просто натисніть в
       додатку ‘‘Замовити’’ і ми самі зв’яжемося з продавцем, перевіримо його
       наявність, придбаємо та замовимо доставку до складу.
+    image: /img/turkey-buy.png
   servicelist:
     - titlee: Cтраховка посилки
-      image: /img/enshurance.png
+      image: /img/insurance-additional-service-easyget.png
       title: Cтраховка посилки
     - titlee: Додаткове фото
-      image: /img/enshurance.png
+      image: /img/additional-photo-additional-service-easyget.png
       title: Додаткове фото
+    - title: Відео  огляд товару
+      image: /img/video-additional-service-easyget.png
+    - title: Додаткове пакування
+      image: /img/additionaly-packaging-additional-service-easyget.png
+    - title: Об’еднання посилки
+      image: /img/unification-additional-service-easyget.png
+    - title: Пепепакування посилки
+      image: /img/repackeging-additional-service-easyget.png
+    - title: Розділення посилок
+      image: /img/separation-additional-service-easyget.png
+    - title: Перевірка вкл/викл
+      image: /img/check-additional-service-easyget.png
+    - title: Переговори з постачальником
+      image: /img/conversation-additional-service-easyget.png
+  title: Наші послуги
 why:
+  title: EasyGet
+  text: Купувати турецький одяг, текстиль та інші вироби в інтернет-магазинах в
+    роздріб як ніколи вигідно разом з EasyGet. Обирайте на різних сайтах та
+    об’єднуйте до 8 замовлень в 1 посилку та економте на доставці
+  price: Ціна доставки з Туреччини  в Україну за 0,5 кг 3,95$
+prices:
   title: EasyGet
   text: Купувати турецький одяг, текстиль та інші вироби в інтернет-магазинах в
     роздріб як ніколи вигідно разом з EasyGet. Обирайте на різних сайтах та
