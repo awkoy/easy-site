@@ -203,11 +203,14 @@ collections:
             name: service
             widget: object
             fields: [
+              {label: Title, name: title, widgeet: string},
               {label: Delivery, name: delivery, widget: object, fields: [
+                {label: Image, name: image, widget: image},
                 {label: Title, name: title, widget: string}, 
                 {label: Text, name: text, widget: text}
               ]},
               {label: Buy, name: buy, widget: object, fields: [
+                {label: Image, name: image, widget: image},
                 {label: Title, name: title, widget: string}, 
                 {label: Text, name: text, widget: text}
               ]},
@@ -218,6 +221,18 @@ collections:
             ]
           - label: WhySection
             name: why
+            widget: object
+            fields: [
+              {label: Title, name: title, widgeet: string},
+              {label: Subtitle, name: text, widget: markdown},
+              {label: List, name: list, widget: list, fields: [
+                {label: Image, name: image, widget: image},
+                {label: Title, name: title, widget: string},
+                {label: Text, name: text, widget: string},
+              ]}
+            ]
+          - label: PricesSection
+            name: prices
             widget: object
             fields: [
               {label: Title, name: title, widgeet: string},
