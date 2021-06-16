@@ -77,7 +77,18 @@ shops:
           cost: 525 - 700 ₴
         - type: Футболки
           cost: 100 - 350 ₴
-  shopslist: []
+  shopslist:
+    - name: testshop
+      category: clothes
+      logo: /img/1688.png
+      description: Роздрібні торговельні майданчики з величезним асортиентом від
+        турецьких виробників
+      link: https://wp.utec-l.com/
+      prices:
+        - type: Барабани
+          cost: 700 - 1200 ₴
+        - type: Штани і спідниці
+          cost: 525 - 700 ₴
 about:
   title: Про EasyGet
   list:
