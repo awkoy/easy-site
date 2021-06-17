@@ -12,7 +12,7 @@ const Why = ({ why }) => {
                 </div>
                 <div className="turkey-why__list">
                     {why.list.map(({ image, title, text }) => (
-                        <div className="turkey-why__item">
+                        <div className="turkey-why__item" key={text}>
                             <div className="turkey-why__img">
                                 <EasyImage image={image} />
                             </div>

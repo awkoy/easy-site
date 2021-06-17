@@ -4,14 +4,6 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import EeasySection from '../components/Landing/EasySection'
-import AboutSection from '../components/Landing/AboutSection'
-import FreeSection from '../components/Landing/FreeSection'
-import HowSection from '../components/Landing/HowSection'
-import PriceSection from '../components/Landing/PriceSection'
-import OkaySection from '../components/Landing/OkaySection'
-import CheapestSection from '../components/Landing/CheapestSection'
-import EcommerceSection from '../components/Landing/EcommerceSection'
-// import CompareSection from '../components/Landing/CompareSection'
 import FeedbackSection from '../components/Landing/FeedbackSection'
 import Profit from '../components/Turkey/Profit'
 import HowItWorks from '../components/Turkey/HowItWorks'
@@ -20,12 +12,14 @@ import About from '../components/Turkey/About'
 import Services from '../components/Turkey/Services'
 import Why from '../components/Turkey/Why'
 import Prices from '../components/Turkey/Prices'
+import Shops from '../components/Turkey/Shops'
 
 export const TurkeyPageTemplate = ({
     easy,
     profit,
     how,
     popular,
+    shops,
     about,
     service,
     why,
@@ -39,6 +33,7 @@ export const TurkeyPageTemplate = ({
             <Profit profit={profit} />
             <HowItWorks how={how} />
             <Popular popular={popular}/>
+            <Shops shops={shops} />
             <About about={about} />
             <Services service={service} />
             <Why why={why} />
@@ -58,6 +53,7 @@ const TurkeyPage = ({ data }) => {
                 profit={frontmatter.profit}
                 how={frontmatter.how}
                 popular={frontmatter.popular}
+                shops={frontmatter.shops}
                 about={frontmatter.about}
                 service={frontmatter.service}
                 why={frontmatter.why}
@@ -136,6 +132,7 @@ export const pageQuery = graphql`
                 }
               }
             }
+            category
             description
             link
             prices {

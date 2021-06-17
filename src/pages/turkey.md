@@ -68,16 +68,39 @@ popular:
 shops:
   title: ми трошки розділили по категоріям, щоб вам було зручніше
   shopslist:
-    - name: koton.com
+    - name: testshop
+      category: clothes
+      logo: /img/1688.png
       description: Роздрібні торговельні майданчики з величезним асортиентом від
         турецьких виробників
-      link: koton.com
-      logo: /img/logo2.png
+      link: https://wp.utec-l.com/
       prices:
-        - type: Штани
+        - type: Барабани
+          cost: 700 - 1200 ₴
+        - type: Штани і спідниці
           cost: 525 - 700 ₴
-        - type: Футболки
-          cost: 100 - 350 ₴
+    - name: testshop3
+      category: clothes
+      logo: /img/1688.png
+      description: Роздрібні торговельні майданчики з величезним асортиентом від
+        турецьких виробників
+      link: https://wp.utec-l.com/
+      prices:
+        - type: Барабани
+          cost: 700 - 12030 ₴
+        - type: Штани і спідниці
+          cost: 525 - 700 ₴
+    - name: testshop2
+      category: clothes
+      logo: /img/1688.png
+      description: Роздрібні торговельні майданчики з величезним асортиентом від
+        турецьких виробників
+      link: https://wp.utec-l.com/
+      prices:
+        - type: Барабани
+          cost: 700 - 1200 ₴
+        - type: Штани і спідниці
+          cost: 525 - 7030 ₴
 about:
   title: Про EasyGet
   list:

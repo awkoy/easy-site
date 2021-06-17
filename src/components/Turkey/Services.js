@@ -36,7 +36,7 @@ const Services = ({ service }) => {
                 </div>
                 <div className="our-service__list">
                     {service.servicelist.map(({ title, image }) => (
-                        <div className="our-service__item">
+                        <div key={title} className="our-service__item">
                             <div className="our-service__item__img">
                                 <EasyImage image={image} />
                             </div>

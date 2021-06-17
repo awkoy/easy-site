@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import ShopsSlider from '../Common/ShopsSlider';
 
 const categoryList = [
     { label: "Одяг", value: "clothes" },
@@ -9,48 +10,28 @@ const categoryList = [
     { label: "Для дому", value: "home" },
     { label: "Прикраси", value: "jewerly" }
 ]
-const ShopsCategories = ({selectedCategory, onSelect}) => (
-    <div className="turkey-shops__category-list">
+const ShopsCategories = ({ selectedCategory, onSelect }) => (
+    <div className="landing-how__tabs">
         {categoryList.map(({ label, value }) => {
-            const classnames = `turkey-shops__category-item ${value === selectedCategory ? 'isActive' : ''}`
-            return (<div onClick={onSelect} className={classnames}>{label}</div>)})}
+            const classnames = `landing-how__tab ${value === selectedCategory ? 'is-active' : ''}`
+            return (
+                <div key={label} role="button" tabIndex={0} onClick={() => onSelect(value)} onKeyPress={() => onSelect(value)} className={classnames}>{label}</div>)
+        })}
     </div>
 )
 
 const Shops = ({ shops }) => {
-    const [selectedCategory, setSelectedCategory] = useState(categoryList[0].value);
-    const selectedShops = shops.shopslist.filter(shop => shop.category.value === selectedCategory)
-    console.log('selectedShops', selectedShops)
+    const [selectedCategory, setSelectedCategory] = useState(categoryList[0].value)
+    const selectedShops = shops.shopslist.filter(shop => shop.category === selectedCategory)
+    console.log('selectedShops', selectedShops, selectedCategory, shops)
     return (
-        <section className="turkey-shops">
+        <section className="turkey-shops is-rounded-bottom">
             <div className="container">
-                <div className="turkey-shops__title">{shops.title}</div>
-                <ShopsCategories 
-                    selectedCategory={selectedCategory} 
-                    onSelect={() => setSelectedCategory(value)} />
-                <div className="turkey-shops__content">
-                    <div className="turkey-shops__slider">
-
-                    </div>
-                    <div className="turkey-shops__current-shop">
-                        <div className="turkey-shops__current-shop__about">
-                            <div className="turkey-shops__current-shop__title">
-
-                            </div>
-                            <div className="turkey-shops__current-shop__text text">
-
-                            </div>
-                            <div className="turkey-shops__current-shop__btn btn">
-                                Обрати товар
-                            </div>
-                        </div>
-                        <div className="turkey-shops__current-shop__prices">
-                            <div className="turkey-shops__current-shop__prices__item">
-                                <span></span><b></b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div className="turkey-shops__title text">{shops.title}</div>
+                <ShopsCategories
+                    selectedCategory={selectedCategory}
+                    onSelect={(value) => setSelectedCategory(value)} />
+                {selectedShops.length ? <ShopsSlider list={selectedShops} /> : null}
             </div>
         </section>
     )

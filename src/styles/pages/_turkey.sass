@@ -195,3 +195,121 @@
         font-weight: 700
         margin-bottom: 60px
         max-width: 240px
+.turkey-shops
+    padding-bottom: 140px
+    text-align: center
+    &__title
+        text-align: center
+        margin-bottom: 36px
+    &__logo
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        background: $white
+        height: 88px
+        margin: 6px 12px
+        width: 180px
+        position: relative
+    &__content
+        display: flex
+        align-items: center
+        padding-top: 40px
+        min-height: 600px
+    &__slider
+        position: relative
+        .swiper-pagination
+            left: 10px
+            right: auto
+        .swiper-pagination-bullet
+            background: #EFB443
+            opacity: 0.5
+        .swiper-pagination-bullet-active
+            opacity: 1
+            transform: scale(1.2)
+        .swiper-container
+            padding-top: 8px
+            padding-bottom: 8px
+            padding-left: 36px
+            padding-right: 36px
+        .swiper-button-next,
+        .swiper-button-prev 
+            background: #fff
+            width: 60px
+            height: 60px
+            box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+            border-radius: 50%;
+            left: 0
+            right: 0
+            margin: auto
+            &:after
+                font-size: 14px
+                color: #EFB443
+        .swiper-button-next
+            transform: rotate(90deg)
+            top: calc(100% + 20px)
+        .swiper-button-prev
+            transform: rotate(90deg)
+            top: -80px
+
+
+    &__current-shop
+        display: flex
+        text-align: left
+        width: 100%
+        &__about
+            max-width: 304px
+        &__title
+            font-weight: 700
+            font-size: 54px
+            line-height: 72px
+            margin-bottom: 26px
+        &__btn
+            display: inline-block
+            background: #EFB443
+            min-width: auto
+        &__text
+            min-height: 110px
+            padding-bottom: 20px
+            font-size: 18px
+            line-height: 24px
+        &__prices
+            padding-top: 80px
+            margin-left: 80px
+            width: 100%
+            &__item
+                display: flex
+                justify-content: space-between
+                align-items: center
+                min-height: 62px
+                border-bottom: 1px solid rgba(#BFBFBF, .2)
+                &:last-item
+                    border-bottom: 1px solid transparent
+                span
+                    font-size: 18px
+                    color: #282828
+                b
+                    font-size: 24px
+                    color: #91C258
+    .landing-how__tabs
+        display: inline-flex
+        margin: 0 auto
+        &:after
+            width: 100%
+        .landing-how__tab
+            &:after
+                width: 100%
+                top: 50%
+                z-index: -1
+                left: 50%
+                height: 100%
+                content: ''
+                background: #ffffff
+                display: block
+                position: absolute
+                box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1)
+                border-radius: 108px
+                transition: .3s
+                transform: translate(-50%,-50%)
+                opacity: 0
+            &.is-active:after
+                opacity: 1
+            

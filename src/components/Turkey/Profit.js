@@ -14,7 +14,7 @@ const Profit = ({ profit }) => {
             <div className="container">
                 <h2 className="profit__title title">{profit.title}</h2>
                 <div className="profit__list">
-                    {profit.things.map(item => <ProfitItem item={item} />)}
+                    {profit.things.map(item => <ProfitItem key={item.title} item={item} />)}
                 </div>
             </div>
         </div>
