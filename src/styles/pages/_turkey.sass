@@ -211,11 +211,15 @@
         position: relative
     &__content
         display: flex
-        align-items: center
+        align-items: flex-start
         padding-top: 40px
         min-height: 600px
+        .swiper-container
+            width: 100%
     &__slider
         position: relative
+        margin-top: 100px
+        min-height: 0
         .swiper-pagination
             left: 10px
             right: auto
@@ -230,6 +234,7 @@
             padding-bottom: 8px
             padding-left: 36px
             padding-right: 36px
+            height: 300px
         .swiper-button-next,
         .swiper-button-prev 
             background: #fff
@@ -255,6 +260,9 @@
         display: flex
         text-align: left
         width: 100%
+        min-height: 640px
+        padding-top: 100px
+        padding-left: 40px
         &__about
             max-width: 304px
         &__title
@@ -289,6 +297,7 @@
                 b
                     font-size: 24px
                     color: #91C258
+                    white-space: nowrap
     .landing-how__tabs
         display: inline-flex
         margin: 0 auto

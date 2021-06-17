@@ -20,11 +20,11 @@ const ShopsSlider = ({list}) => {
                 <Swiper
                     controller={{ control: controlledSwiper }}
                     slidesPerView={3}
-                    centeredSlides={true}
                     navigation={{
                         prevEl,
                         nextEl,
                     }}
+                    centeredSlides={true}
                     direction={'vertical'}
                     pagination={{
                         "clickable": true
