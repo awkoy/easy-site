@@ -222,6 +222,32 @@ shops:
           cost: від 150 грн
         - type: "чоловічі джинси "
           cost: від 500 грн
+    - description: "Ipekyol - бренд вважається одним з найпрестижніших і не
+        відноситься до мас-маркету, ціни - вище середнього. В асортименті
+        переважає класичний одяг і елегантна взуття. "
+      name: "Ipekyol "
+      category: shoes
+      logo: /img/1688.png
+      link: https://www.ipekyol.com.tr/ayakkabi/sneaker-modelleri/
+      prices:
+        - type: жіночі кросівки
+          cost: від 1580 грн
+        - type: жіночі сандалі
+          cost: від 950 грн
+        - type: взуття на підборах
+          cost: від 1580 грн
+    - description: NetWork (НетВорк) - це перевірена класика в благородних кольорах,
+        красива повсякденний одяг, а також квіткові, геометричні або східні
+        принти.
+      logo: /img/1688.png
+      category: shoes
+      name: NetWork
+      prices:
+        - type: чоловіче взуття
+          cost: від 4 000 грн
+        - type: жіноче взуття
+          cost: від 3 160 грн
+      link: https://www.network.com.tr/network-ayakkabi-ve-canta-1762
 about:
   title: Про EasyGet
   list:
