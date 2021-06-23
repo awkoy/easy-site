@@ -412,6 +412,126 @@ shops:
           cost: від 200 грн
         - type: "халати "
           cost: від 600 грн
+    - name: n11
+      category: clothes
+      logo: /img/1688.png
+      description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      link: http://www.n11.com/
+    - name: n11
+      category: shoes
+      description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      link: http://www.n11.com/
+      logo: /img/1688.png
+    - link: http://www.n11.com/
+      name: n11
+      category: jewerly
+      logo: /img/1688.png
+      description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+    - link: http://www.n11.com/
+      name: n11
+      category: kids
+      description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      logo: /img/1688.png
+    - description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      logo: /img/1688.png
+      category: home
+      name: n11
+      link: http://www.n11.com/
+    - name: Gittigidiyor
+      category: clothes
+      logo: /img/1688.png
+      description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      link: http://www.gittigidiyor.com/
+    - description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      link: http://www.gittigidiyor.com/
+      logo: /img/1688.png
+      category: shoes
+      name: Gittigidiyor
+    - name: Gittigidiyor
+      category: textile
+      logo: /img/1688.png
+      description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      link: http://www.gittigidiyor.com/
+    - description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      link: http://www.gittigidiyor.com/
+      logo: /img/1688.png
+      category: kids
+      name: Gittigidiyor
+    - name: Gittigidiyor
+      category: home
+      logo: /img/1688.png
+      description: Роздрібний торговельний майданчик з величезним асортиентом від
+        турецьких виробників. Для перегляду потрібно увімкнути VPN.
+      link: http://www.gittigidiyor.com/
+    - link: https://www.hepsiburada.com
+      name: Hepsiburada
+      category: clothes
+      logo: /img/1688.png
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+    - description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
+      category: shoes
+      name: Hepsiburada
+      link: https://www.hepsiburada.com
+    - name: Hepsiburada
+      link: https://www.hepsiburada.com
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
+      category: kids
+    - name: Hepsiburada
+      category: home
+      logo: /img/1688.png
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      link: https://www.hepsiburada.com
+    - link: https://www.hepsiburada.com
+      logo: /img/1688.png
+      category: jewerly
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      name: Hepsiburada
+    - name: Trendyol
+      category: clothes
+      logo: /img/1688.png
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      link: https://www.trendyol.com/
+    - link: https://www.trendyol.com/
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
+      name: Trendyol
+      category: shoes
+    - name: Trendyol
+      category: kids
+      logo: /img/1688.png
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      link: https://www.trendyol.com/
+    - link: https://www.trendyol.com/
+      logo: /img/1688.png
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      category: home
+      name: Trendyol
+    - name: Trendyol
+      logo: /img/1688.png
+      category: jewerly
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      link: https://www.trendyol.com/
 about:
   title: Про EasyGet
   list:
