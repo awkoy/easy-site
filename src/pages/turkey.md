@@ -532,6 +532,66 @@ shops:
       description: Популярний сайти з величезним різноманіттям виробників як турецьких
         та світових брендів
       link: https://www.trendyol.com/
+    - link: https://www.morhipo.com/
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      name: Morhipo
+      category: clothes
+      logo: /img/1688.png
+    - link: https://www.morhipo.com/
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      name: Morhipo
+      category: shoes
+      logo: /img/1688.png
+    - link: https://www.morhipo.com/
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      name: Morhipo
+      category: kids
+      logo: /img/1688.png
+    - link: https://www.morhipo.com/
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      name: Morhipo
+      category: home
+      logo: /img/1688.png
+    - link: https://www.morhipo.com/
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      name: Morhipo
+      category: jewerly
+      logo: /img/1688.png
+    - link: http://www.amazon.com.tr/
+      name: Amazon TR
+      category: clothes
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
+    - link: http://www.amazon.com.tr/
+      name: Amazon TR
+      category: shoes
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
+    - link: http://www.amazon.com.tr/
+      name: Amazon TR
+      category: kids
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
+    - link: http://www.amazon.com.tr/
+      name: Amazon TR
+      category: home
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
+    - link: http://www.amazon.com.tr/
+      name: Amazon TR
+      category: jewerly
+      description: Популярний сайти з величезним різноманіттям виробників як турецьких
+        та світових брендів
+      logo: /img/1688.png
 about:
   title: Про EasyGet
   list:
