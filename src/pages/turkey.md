@@ -592,6 +592,69 @@ shops:
       description: Популярний сайти з величезним різноманіттям виробників як турецьких
         та світових брендів
       logo: /img/1688.png
+    - link: https://www.penti.com
+      name: Penti
+      category: clothes
+      logo: /img/1688.png
+      description: "Домашній комфорт для всієї сім'ї "
+    - link: http://www.camasirim.com/
+      name: Camasirim
+      category: clothes
+      logo: /img/1688.png
+      description: "Домашній комфорт для всієї сім'ї "
+    - link: http://www.ciceksepeti.com
+      name: Ciceksepeti
+      category: clothes
+      logo: /img/1688.png
+      description: Бюджетні варіанти товарів для дому від книжок до декоративних
+        товарід для дому
+    - description: Бюджетні варіанти товарів для дому від книжок до декоративних
+        товарід для дому
+      logo: /img/1688.png
+      link: http://www.ciceksepeti.com
+      name: Ciceksepeti
+      category: shoes
+    - name: Ciceksepeti
+      category: home
+      logo: /img/1688.png
+      description: Бюджетні варіанти товарів для дому від книжок до декоративних
+        товарід для дому
+      link: http://www.ciceksepeti.com
+    - link: http://www.ciceksepeti.com
+      description: Бюджетні варіанти товарів для дому від книжок до декоративних
+        товарід для дому
+      logo: /img/1688.png
+      category: jewerly
+      name: Ciceksepeti
+    - link: http://markabebe.com/
+      name: Markabebe
+      category: kids
+      logo: /img/1688.png
+      description: Дитячі та підліткові бренди
+    - description: Дитячі та підліткові бренди
+      link: http://www.cimcimebebe.com/
+      name: Cimcimebebe
+      category: kids
+      logo: /img/1688.png
+    - link: http://www.hotic.com.tr/
+      name: Hotic
+      category: shoes
+      logo: /img/1688.png
+      description: Турецький виробник взуття з приємною ціновою політикою
+      prices:
+        - type: повсякденне жіноче взуття
+          cost: від 1 150 грн
+        - type: жіночі сандалі
+          cost: від 880 грн
+        - type: повсякденне чоловіче взуття
+          cost: від 2 000 грн
+        - type: чоловічі сандалі
+          cost: від 3 000 грн
+    - link: https://www.flo.com.tr/
+      name: Flo
+      category: shoes
+      logo: /img/1688.png
+      description: Вигідні пропозиції якісного взуття для всієї родини
 about:
   title: Про EasyGet
   list:
