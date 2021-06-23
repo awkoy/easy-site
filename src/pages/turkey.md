@@ -248,6 +248,59 @@ shops:
         - type: жіноче взуття
           cost: від 3 160 грн
       link: https://www.network.com.tr/network-ayakkabi-ve-canta-1762
+    - name: "Taç "
+      category: textile
+      logo: /img/1688.png
+      description: За 40 років успішної роботи бренд зумів завоювати бездоганну
+        репутацію і максимально розширити асортимент.
+      link: https://www.tac.com.tr/
+      prices:
+        - type: "постільні комплекти "
+          cost: від 450 грн
+        - type: "простирадла "
+          cost: від 300 грн
+        - type: "покривала (комплект) "
+          cost: від 1 750 грн
+        - type: "банні рушники "
+          cost: від 300 грн
+        - type: халати
+          cost: від 600 грн
+    - name: Yataş
+      category: textile
+      logo: /img/1688.png
+      description: Концепція здорового сну була основною при створенні бренду і
+        залишається такою досі. Матраци від «Яташ» - одні з найвідоміших в
+        Туреччині і за її межами.
+      link: https://www.yatasbedding.com.tr/
+      prices:
+        - type: "халати "
+          cost: від 500 грн
+        - type: "простирадла "
+          cost: від 250 грн
+        - type: "постільні комплекти "
+          cost: від 460 грн
+        - type: банні рушники
+          cost: від 150 грн
+        - type: "покривала "
+          cost: від 600 грн
+    - name: Linens
+      category: textile
+      logo: /img/1688.png
+      description: Це перший турецький бренд, магазини якого почали відкриватися за
+        межами країни - всього нараховувалося 8 торгових точок в 7-ми країнах
+        світу.
+      link: https://www.linens.com.tr/
+      prices:
+        - type: "халати "
+          cost: від 1 000 грн
+        - type: простирадла
+          cost: від 350 грн
+        - type: "постільні комплекти "
+          cost: від 870 грн
+        - type: "банні рушники "
+          cost: від 350 грн
+        - type: "покривала "
+          cost: від 900 грн
 about:
   title: Про EasyGet
   list:
