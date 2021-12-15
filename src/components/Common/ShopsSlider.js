@@ -54,13 +54,13 @@ const ShopsSlider = ({list}) => {
                                 Обрати товар
                             </a>
                         </div>
-                        <div className="turkey-shops__current-shop__prices">
+                        {shop.prices && (<div className="turkey-shops__current-shop__prices">
                             {shop.prices.map((price) => (
                                 <div key={shop.name + price.type} className="turkey-shops__current-shop__prices__item">
                                     <span>{price.type}</span><b>{price.cost}</b>
                                 </div>
                             ))}
-                        </div>
+                        </div>)}
                     </div>
                 </SwiperSlide>))}
             </Swiper>

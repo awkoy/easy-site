@@ -26,13 +26,13 @@ const PriceSection = () => {
                 Доставка
               </div>
             <div className="landing-price__item-value">
-              7-14
-              <span>Днів</span>
+              від 8 робочих
+              <span>днів</span>
             </div>
           </div>
           <div className="landing-price__item">
             <div className="landing-price__item-value">
-              5.95$
+              7$
             </div>
             <div className="landing-price__item-label">
               Китай / 0,5кг
