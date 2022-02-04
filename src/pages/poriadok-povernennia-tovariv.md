@@ -2,7 +2,7 @@
 templateKey: info-page
 title: Компенсація та страхування
 ---
-<!--\\\\\[if gte mso 9]><xml>
+<!--\\\\\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -42,9 +42,9 @@ title: Компенсація та страхування
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\\\\\[endif]-->
+</xml><!\\\\\\[endif]-->
 
-<!--\\\\\[if gte mso 9]><xml>
+<!--\\\\\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="371">
@@ -613,9 +613,9 @@ title: Компенсація та страхування
   <w:LsdException Locked="false" Priority="52"
    Name="List Table 7 Colorful Accent 6"/>
  </w:LatentStyles>
-</xml><!\\\\\[endif]-->
+</xml><!\\\\\\[endif]-->
 
-<!--\\\\\[if gte mso 10]>
+<!--\\\\\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -637,7 +637,7 @@ title: Компенсація та страхування
 	mso-ansi-language:RU;
 	mso-fareast-language:EN-US;}
 </style>
-<!\\\\\[endif]-->
+<!\\\\\\[endif]-->
 
 <!--StartFragment-->
 
@@ -671,9 +671,7 @@ title: Компенсація та страхування
 
 Компанія не несе відповідальності за дії перевізника товару та не контролює їх.
 
-
-
-## Політика компенсацій, яка діє з 03.02.2022
+### Політика компенсацій, яка діє з 03.02.2022
 
 **Компенсація можлива у таких випадках:**
 
