@@ -70,7 +70,7 @@ cheapest:
       compare:
         - logo: /img/c-easy.svg
           title: EasyGet
-          duration: 12 днів
+          duration: 14 днів
           price: 310 ₴
         - logo: /img/c-ali.svg
           title: AliExpress
@@ -85,7 +85,7 @@ cheapest:
       compare:
         - logo: /img/c-easy.svg
           title: EasyGet
-          duration: 12 днів
+          duration: 14 днів
           price: 2 240  ₴
         - logo: /img/c-ali.svg
           title: AliExpress
@@ -100,7 +100,7 @@ cheapest:
       compare:
         - logo: /img/c-easy.svg
           title: EasyGet
-          duration: 12 днів
+          duration: 14 днів
           price: 929 ₴
         - logo: /img/c-ali.svg
           duration: 40 днів
