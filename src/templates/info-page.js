@@ -15,7 +15,7 @@ export const InfoPageTemplate = ({ title, content, preview, contentComponent }) 
           <EasyImage image={preview} />
         </div> : null}
         <h2 className="info__title">{title}</h2>
-        <PageContent className="info__content" content={content} />
+        <PageContent content={content} />
       </div>
     </section>
   )

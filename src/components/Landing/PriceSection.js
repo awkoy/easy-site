@@ -14,7 +14,7 @@ const PriceSection = () => {
         <div className="landing-price__items">
           <div className="landing-price__item">
             <div className="landing-price__item-value">
-              3.95$
+              5.5$
             </div>
             <div className="landing-price__item-label">
               США / 0,5кг
@@ -26,13 +26,13 @@ const PriceSection = () => {
                 Доставка
               </div>
             <div className="landing-price__item-value">
-              від 8 робочих
+              14-25
               <span>днів</span>
             </div>
           </div>
           <div className="landing-price__item">
             <div className="landing-price__item-value">
-              7$
+              8$
             </div>
             <div className="landing-price__item-label">
               Китай / 0,5кг
