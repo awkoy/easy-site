@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.utec.easyget",
+    "sha256_cert_fingerprints": [
+      "60:A8:27:1C:3E:F6:C3:9A:28:D0:CA:36:B4:E9:47:EB:37:2A:D6:40:0A:6B:09:01:0C:C1:6F:98:41:CB:76:F2",
+      "C9:25:BA:19:46:BC:57:06:97:4C:B3:F2:0C:E2:7E:C7:7C:D3:0C:FE:5F:FA:DE:AB:5F:7C:91:78:3A:53:16:3B"
+    ]
+  }
+}]
